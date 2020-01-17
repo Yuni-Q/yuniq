@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yuniq]]></title><description><![CDATA[yuniq's graffiti]]></description><link>https://yuni-q.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 17 Jan 2020 00:32:45 GMT</lastBuildDate><item><title><![CDATA[프로토타입 기반의 객체지향]]></title><description><![CDATA[…]]></description><link>https://yuni-q.github.io/javascript/프로토타입-기반의-객체지향/</link><guid isPermaLink="false">https://yuni-q.github.io/javascript/프로토타입-기반의-객체지향/</guid><pubDate>Fri, 17 Jan 2020 09:01:35 GMT</pubDate><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yuniq]]></title><description><![CDATA[yuniq's graffiti]]></description><link>https://yuni-q.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 17 Jan 2020 00:38:25 GMT</lastBuildDate><item><title><![CDATA[프로토타입 기반의 객체지향]]></title><description><![CDATA[…]]></description><link>https://yuni-q.github.io/javascript/프로토타입-기반의-객체지향/</link><guid isPermaLink="false">https://yuni-q.github.io/javascript/프로토타입-기반의-객체지향/</guid><pubDate>Fri, 17 Jan 2020 09:01:35 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;프로토타입 기반 프로그래밍은 객체지향 프로그래밍의 한 형태의 갈래로 클래스가 없고, 클래스 기반 언어에서 상속을 사용하는 것과는 다르게, 객체를 원형(프로토타입)으로 하여 복제의 과정을 통하여 객체의 동작 방식을 다시 사용할 수 있습니다.&lt;/li&gt;
 &lt;li&gt;프로토 타입 역할을 하는 delegation을 통해 기존 객체를 재사용하는 프로세스를 통해 동작 재사용(상속)을 수행 하는 객체 지향 프로그래밍 스타일입니다. 프로토 타입 기반 프로그래밍은 일반화 된 객체를 사용하여 복제 및 확장 할 수 있습니다.&lt;/li&gt;
 &lt;li&gt;프로토타입기반 프로그래밍은 클래스리스(class-less), 프로토타입 지향(prototype-oriented) 혹은 인스턴스 기반(instance-based) 프로그래밍이라고도 한다. delegation은 프로토 타입 기반 프로그래밍을 지원하는 언어 기능입니다.&lt;/li&gt;
@@ -763,7 +763,7 @@ setTimeout(), setInterval()은 보이지 않은 곳에서도 수행되지만, re
 &lt;ul&gt;
 &lt;li&gt;2018.03 ~&lt;/li&gt;
 &lt;li&gt;디자이너와 개발자가 함께하는 동아리&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[웹 프론트엔드 개발자 이윤희입니다. React를 주로 다루고 있습니다.         GitHub https://github.com/Yuni-Q Blog https://yuni-q.github.io E-mail lyh6425@gmail.com…]]></description><link>https://yuni-q.github.io/resume-ko/</link><guid isPermaLink="false">https://yuni-q.github.io/resume-ko/</guid><pubDate>Tue, 14 Jan 2020 12:40:00 GMT</pubDate><content:encoded>&lt;article class=&quot;l-Wrapper&quot;&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[웹 프론트엔드 개발자 이윤희입니다. React를 주로 다루고 있습니다.            GitHub https://github.com/Yuni-Q Blog https://yuni-q.github.io E-mail lyh6425@gmail.com…]]></description><link>https://yuni-q.github.io/resume-ko/</link><guid isPermaLink="false">https://yuni-q.github.io/resume-ko/</guid><pubDate>Tue, 14 Jan 2020 12:40:00 GMT</pubDate><content:encoded>&lt;article class=&quot;l-Wrapper&quot;&gt;
   &lt;div class=&quot;l-Header&quot;&gt;
     &lt;h1 class=&quot;Title&quot;&gt;
       &lt;span class=&quot;u-shadow&quot;&gt;
@@ -774,7 +774,7 @@ setTimeout(), setInterval()은 보이지 않은 곳에서도 수행되지만, re
 &lt;br/&gt;
 &lt;p&gt;웹 프론트엔드 개발자 이윤희입니다.&lt;br&gt;
 React를 주로 다루고 있습니다.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;#TypeScript&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#React&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#RxJS&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#Redux&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#Documentation&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#Architecture&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;#javaScript&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#typeScript&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#react&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#redux&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#redux-saga&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#next&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;node&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;express&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;#styled-components&lt;/code&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
