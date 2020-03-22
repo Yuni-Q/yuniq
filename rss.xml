@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yuniq 블로그]]></title><description><![CDATA[yuniq's graffiti]]></description><link>https://yuni-q.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 21 Mar 2020 06:19:37 GMT</lastBuildDate><item><title><![CDATA[생년월일 확인]]></title><link>https://yuni-q.github.io/javascript/생년월일-확인/</link><guid isPermaLink="false">https://yuni-q.github.io/javascript/생년월일-확인/</guid><pubDate>Fri, 20 Mar 2020 13:03:03 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; moment &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;moment&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yuniq 블로그]]></title><description><![CDATA[yuniq's graffiti]]></description><link>https://yuni-q.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 Mar 2020 15:30:45 GMT</lastBuildDate><item><title><![CDATA[github education name.com 사용하기]]></title><description><![CDATA[도메인 구입 DNS 세팅 type : A answer : {본인 IP} SSL 적용 CSR 생성 이메일과 전화번호는 name.com…]]></description><link>https://yuni-q.github.io/develop/github-education-name.com-사용하기/</link><guid isPermaLink="false">https://yuni-q.github.io/develop/github-education-name.com-사용하기/</guid><pubDate>Sun, 22 Mar 2020 22:03:06 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;도메인 구입&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DNS 세팅&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;type : A&lt;/li&gt;
+&lt;li&gt;answer : {본인 IP}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SSL 적용&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CSR 생성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; ~/www.moti.company.ssl/
+&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; ~/www.moti.company.ssl/
+
+openssl genrsa -out ~/www.moti.company.ssl/www.moti.company.key &lt;span class=&quot;token number&quot;&gt;2048&lt;/span&gt;
+
+openssl req -new -sha256 -key ~/www.moti.company.ssl/www.moti.company.key -out ~/www.moti.company.ssl/www.moti.company.csr&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;이메일과 전화번호는 name.com 사이트와 일치하게 작성합니다.&lt;br&gt;
+도메인과 파일 이름을 같게 세팅 합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;인증서 설치&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;아래의 정보를 바탕으로 인증서 받기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; ~/www.moti.company.ssl/www.moti.company.csr&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;인증서 정보를 바탕으로 cert.pem 생성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt; ~/www.moti.company.ssl/cert.pem&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Nginx 세팅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; /etc/nginx/
+&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt; nginx.conf&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;server &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  listen       &lt;span class=&quot;token number&quot;&gt;443&lt;/span&gt; ssl http2 default_server&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  listen       &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;::&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;:443 ssl http2 default_server&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  server_name  _&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  root         /usr/share/nginx/html&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  ssl_certificate /home/ec2-user/www.moti.company.ssl/cert.pem&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  ssl_certificate_key /home/ec2-user/www.moti.company.ssl/www.moti.company.key&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;# ssl_session_cache shared:SSL:1m;&lt;/span&gt;
+
+  ssl_session_timeout  10m&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;# ssl_ciphers PROFILE=SYSTEM;&lt;/span&gt;
+
+  ssl_prefer_server_ciphers on&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;# Load configuration files for the default server block.&lt;/span&gt;
+  include /etc/nginx/default.d/*.conf&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  location / &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    proxy_pass http://127.0.0.1:8080&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  error_page &lt;span class=&quot;token number&quot;&gt;404&lt;/span&gt; /404.html&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    location &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; /40x.html &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  error_page &lt;span class=&quot;token number&quot;&gt;500&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;502&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;503&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;504&lt;/span&gt; /50x.html&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    location &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; /50x.html &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ssl&lt;em&gt;session&lt;/em&gt;cache shared:SSL:1m와 ssl_ciphers PROFILE=SYSTEM는 openssl 버전에 따라서 되지 않을 수도 있습니다. 제가 작업한 버전에선 동작하지 않았습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; systemctl restart nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[생년월일 확인]]></title><link>https://yuni-q.github.io/javascript/생년월일-확인/</link><guid isPermaLink="false">https://yuni-q.github.io/javascript/생년월일-확인/</guid><pubDate>Fri, 20 Mar 2020 13:03:03 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; moment &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;moment&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;930216&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;moment&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;date&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;YY-MM-DD&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isVaild&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; date&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
