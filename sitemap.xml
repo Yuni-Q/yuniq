@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://yuni-q.github.io/frontend/크롤링/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/clean code/clean-code-17장-냄새와-휴리스틱/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/clean code/clean-code-14장-점진적인개선/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/clean code/clean-code-부록a-동시성2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/clean code/clean-code-15장-16장/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/develop/node-https-적용/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/clean code/clean-code-13장-동시성/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/clean code/clean-code-12장-창발성/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/clean code/clean-code-10장-클래스/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/clean code/clean-code-11장-시스템/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
