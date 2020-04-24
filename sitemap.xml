@@ -8,15 +8,9 @@
 <url> <loc>https://yuni-q.github.io/develop/collection/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/develop/grasp-(object-oriented-design)/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/javascript/async-await/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/javascript/promise/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/javascript/iterator/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/javascript/generator/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/develop/재귀(recursion)/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/javascript/map,-filter,-reduce를-사용하는-이유/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/javascript/==-vs-===/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/javascript/this,-call(),-apply(),-bind()/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/frontend/dom/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/javascript/primitive-type/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/object/object-chapter-05-책임-할당하기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/frontend/크롤링/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/clean code/clean-code-17장-냄새와-휴리스틱/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -67,8 +61,8 @@
 <url> <loc>https://yuni-q.github.io/develop/tcp-udp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/frontend/input-number/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/kotlin/kotlin-is-and-as/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/java/jre-jvm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/java/java-string/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/Java/jre-jvm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/Java/java-string/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/frontend/마진-병합/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/javascript/javascript-class/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/react/react-hook/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
