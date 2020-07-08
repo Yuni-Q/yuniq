@@ -256,7 +256,7 @@
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>yuni-q<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>./style1.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>./style.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
 
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
@@ -373,6 +373,9 @@
 *	브라우저 기본 스타일이 많이 있습니다. 
 *	그 중에 margin과 padding을 제거해 줍니다.
 */</span>
+<span class="token comment">/* 
+* *은 모든 element에 적용됩니다.
+*/</span>
 <span class="token selector">*</span> <span class="token punctuation">{</span>
 	<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
 	<span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
@@ -393,6 +396,9 @@
 * margin은 margin-top, margin-right, margin-bottom, margin-left가 있습니다. 
 * 이를 단축 속성으로 사용할 수 있습니다. margin : top right bottom left 순 입니다.
 * 생략 시 대칭 값을 따라 갑니다.
+*/</span>
+<span class="token comment">/* 
+* .(점)은 클래스를 선택합니다.
 */</span>
 <span class="token selector">.header</span> <span class="token punctuation">{</span>
 	<span class="token property">margin</span><span class="token punctuation">:</span> 16px 10vw<span class="token punctuation">;</span>
@@ -420,6 +426,7 @@
 	<span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
 	<span class="token property">margin</span><span class="token punctuation">:</span> 0 10vw<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
+
 <span class="token comment">/* 
 * 텍스트 정렬을 위해 text-align을 사용합니다.
 */</span>
@@ -432,6 +439,9 @@
 	<span class="token property">margin-bottom</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
+<span class="token comment">/* 
+* 태그 이름은 아무런 prefix 없이 사용합니다.
+*/</span>
 <span class="token selector">img</span> <span class="token punctuation">{</span>
 	<span class="token property">width</span><span class="token punctuation">:</span> 80%<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
