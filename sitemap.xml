@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://yuni-q.github.io/study front/day1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/실용주의 프론트 엔드 개발/사용성/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/실용주의 프론트 엔드 개발/접근성/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/실용주의 프론트 엔드 개발/하드웨어/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/실용주의 프론트 엔드 개발/네트워크/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/실용주의 프론트 엔드 개발/프론트엔드-성능-체크리스트/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/실용주의 프론트 엔드 개발/웹펙-성능-개선-포인트/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/GoF 디자인 패턴/구조패턴/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/GoF 디자인 패턴/생성패턴/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/GoF 디자인 패턴/행동패턴/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/GoF 디자인 패턴/gof-디자인-패턴-정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/javascript/console-꾸미기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/객체지향의 사실과 오해/04.-역할,-책임,-협력/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/객체지향의 사실과 오해/05.-책임과-메시지/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/객체지향의 사실과 오해/03.-타입과-추상화/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/객체지향의 사실과 오해/02.-이상한-나라의-객체/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/객체지향의 사실과 오해/01.-협력하는-객체들의-공동체/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/읽기 좋은 코드가 좋은 코드다/four-선택된-주제들/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/읽기 좋은 코드가 좋은 코드다/three-코드-재작성하기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/읽기 좋은 코드가 좋은 코드다/two-루프와-논리를-단순화하기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/읽기 좋은 코드가 좋은 코드다/one-표면적-수준에서의-개선/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/읽기 좋은 코드가 좋은 코드다/intro/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/코딩을 지탱하는 기술/객체지향/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/코딩을 지탱하는 기술/에러처리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/코딩을 지탱하는 기술/병행처리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/코딩을 지탱하는 기술/문법의-역사/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/코딩을 지탱하는 기술/형/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/함수형 자바스크립트 | 마이클 포거스/6.-재귀/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/함수형 자바스크립트 | 마이클 포거스/9.-클래스를-이용하지-않는-프로그래밍/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/함수형 자바스크립트 | 마이클 포거스/7.-순수성,-불변성,-변경-정책/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/함수형 자바스크립트 | 마이클 포거스/8.-흐름-기반-프로그래밍/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/함수형 자바스크립트 | 루이스 아텐시오/함수형-자바스크립트-|-루이스-아텐시오/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/함수형 자바스크립트 | 마이클 포거스/5.-함수로-함수-만들기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/함수형 자바스크립트 | 마이클 포거스/4.-고차원-함수/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/함수형 자바스크립트 | 마이클 포거스/3.-변수-스코프와-클로저/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/함수형 자바스크립트 | 마이클 포거스/2.-일급-함수와-응용형-프로그래밍/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/프로그래밍 정석/5.-(습관)-프로그래머의-일상/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/프로그래밍 정석/4.-(관점)-프로그래머가-보는-시각/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/함수형 자바스크립트 | 마이클 포거스/1.-함수형-자바스크립트-소개/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/frontend/blur-처리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/frontend/close-event/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/javascript/자바스크립트-코딩-기술-10가지/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -21,10 +60,10 @@
 <url> <loc>https://yuni-q.github.io/javascript/socket/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/javascript/pm2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/backend/sequelize/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/프로그래밍 정석/2.-원칙:-프로그래밍의-가이드라인/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/프로그래밍 정석/2.-(원칙)-프로그래밍의-가이드라인/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/frontend/lh-and-rlh/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/프로그래밍 정석/3.-사상:-프로그래밍의-이데올로기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/프로그래밍 정석/1.-전체:프로그래밍-불변의-사실/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/프로그래밍 정석/3.-(사상)-프로그래밍의-이데올로기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/프로그래밍 정석/1.-(전체)-프로그래밍-불변의-사실/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/aws/data-transfer/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/clean architecture/14장-컴포넌트-결합/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/clean architecture/13장-컴포넌트-응집도/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
