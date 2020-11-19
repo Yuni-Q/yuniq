@@ -133,6 +133,7 @@ data-styled.g9[id="sc-global-eQvKip1"]{content:"sc-global-eQvKip1,"}/*!sc*/
 <li><a href="/git/git-base/#branch%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD-%ED%8C%8C%EC%95%85">Branch의 변경사항 파악</a></li>
 <li><a href="/git/git-base/#git-remote-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90%EC%84%9C-%EC%A7%80%EC%9B%8C%EC%A7%84-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EB%A1%9C%EC%BB%AC%EC%97%90-%EB%B0%98%EC%98%81">git remote 저장소에서 지워진 브랜치를 로컬에 반영</a></li>
 <li><a href="/git/git-base/#master%EB%A1%9C-rebase%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EA%B2%BD%EC%9A%B0-%EB%B0%B0%ED%8F%AC-%EC%8B%A4%ED%8C%A8%ED%95%98%EA%B2%8C-%ED%95%98%EA%B8%B0">master로 rebase하지 않은 경우 배포 실패하게 하기</a></li>
+<li><a href="/git/git-base/#rebase-%EC%A0%84%EC%97%90%EB%8A%94-%ED%98%84%EC%9E%AC-%EB%B8%8C%EB%9E%9C%EC%B9%98-pull%EC%9D%84-%EB%B0%9B%EC%9E%90">rebase 전에는 현재 브랜치 pull을 받자</a></li>
 </ul>
 </li>
 <li><a href="/git/git-base/#%EC%B0%B8%EA%B3%A0">참고</a></li>
@@ -235,6 +236,14 @@ if [ &quot;${master}&quot; != &quot;${target}&quot; ]; then
   echo &quot;리베이스가 되지 않아 실패하였습니다&quot;
   exit -1
 fi</code></pre></div>
+<h3 id="rebase-전에는-현재-브랜치-pull을-받자" style="position:relative;"><a href="#rebase-%EC%A0%84%EC%97%90%EB%8A%94-%ED%98%84%EC%9E%AC-%EB%B8%8C%EB%9E%9C%EC%B9%98-pull%EC%9D%84-%EB%B0%9B%EC%9E%90" aria-label="rebase 전에는 현재 브랜치 pull을 받자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rebase 전에는 현재 브랜치 pull을 받자</h3>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+	<span class="token property">"husky"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">"hooks"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token property">"pre-rebase"</span><span class="token operator">:</span> <span class="token string">"branch=$(git branch --show-current) &amp;&amp; git pull https://github.com/Yuni-Q/aaa.git ${branch}"</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
 <h2 id="참고" style="position:relative;"><a href="#%EC%B0%B8%EA%B3%A0" aria-label="참고 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참고</h2>
 <ul>
 <li><a href="https://blog.outsider.ne.kr/1505">새 버전에 맞게 git checkout 대신 switch/restore 사용하기</a></li>
