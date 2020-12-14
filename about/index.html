@@ -133,6 +133,9 @@
 <li>배달의민족 대표 B2B서비스채널인 ‘배민사장님광장’ 웹서비스 Front-end 개발/운영개선 프로젝트 리뉴얼</li>
 <li>20.11 ~</li>
 <li>프로젝트 초기 React Application Architecture 설계</li>
+<li>브랜치 전략 구상(master/deploy/feature)</li>
+<li>젠킨스 구성(master의 최신 커밋이 base가 아니라면 배포 불가능)</li>
+<li>허스키 도입(rebase시 현재 브랜치 최신화 후 진행)</li>
 </ul>
 <h4 id="super2" style="position:relative;"><a href="#super2" aria-label="super2 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>super2</h4>
 <ul>
@@ -140,13 +143,21 @@
 <li>20.07 ~ 20.11</li>
 <li><code class="language-text">Typescript</code> <code class="language-text">React</code> <code class="language-text">Spring</code></li>
 <li>e2e test(testcafe) 작성</li>
+<li>tslint를 eslint로 변경</li>
+<li>슈퍼2 설정 정리 및 실행 환경 간소화</li>
+<li>가게 영상/사진 관리 기능 추가</li>
+<li>전통시장카테고리 기능 추가</li>
+<li>배민오더 오프라인 정보 기능 추가</li>
+<li>가게 편의 정보 기능 추가</li>
+<li>전자계약서 e2e TEST(testcafe) 작성</li>
+<li>전자 계약서 내 메뉴 신청 양식 변경</li>
 </ul>
 <h4 id="ceo-moon-front" style="position:relative;"><a href="#ceo-moon-front" aria-label="ceo moon front permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ceo-moon-front</h4>
 <ul>
 <li>배달의민족 대표 B2B서비스채널인 ‘배민사장님광장’ 웹서비스 Front-end 개발/운영개선(셀프서비스 제외한 부분)</li>
 <li>20.06 ~ current</li>
 <li><code class="language-text">Javascript</code> <code class="language-text">WoowahanJS</code></li>
-<li>AB test 구성</li>
+<li>AB test 구성 및 테스트</li>
 </ul>
 <h4 id="ceo-web-self-service" style="position:relative;"><a href="#ceo-web-self-service" aria-label="ceo web self service permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ceo-web-self-service</h4>
 <ul>
@@ -156,13 +167,16 @@
 <li>사장님 광장 내의 셀프 서비스 오픈(20.02.25일 오픈)</li>
 <li>ceo-web-design-system를 활용해서 서비스 Front-end 개발</li>
 <li>
-<p>스마트메뉴 시스템 개선(20.07.14 오픈)</p>
+<p>메뉴 시스템 개선(20.07.14 오픈)</p>
 <ul>
 <li>ceo-selfservice-front(react, redux)를 ceo-web-design-system를 활용해서 ceo-web-self-service(react, mobx)로 내제화</li>
+<li>스마트 메뉴 기능 대거 추가</li>
 </ul>
 </li>
 <li>e2e test(testcafe) 작성</li>
 <li>A/B test 구성</li>
+<li>로컬 환경에서 https 적용</li>
+<li>class component method binding 규칙 논의</li>
 </ul>
 <h4 id="ceo-web-design-system" style="position:relative;"><a href="#ceo-web-design-system" aria-label="ceo web design system permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ceo-web-design-system</h4>
 <ul>
@@ -184,12 +198,21 @@
 <li>19.08 ~ 20.01</li>
 <li><code class="language-text">TypeScript</code> <code class="language-text">React</code> <code class="language-text">Redux</code> <code class="language-text">Redux-Saga</code> <code class="language-text">React-Router</code> <code class="language-text">JEST</code></li>
 <li>ceo-web-self-service로 병합 후 프로젝트 종료</li>
+<li>1인분 메뉴 가격 최소, 최대값 입력 제한 개발</li>
+<li>메뉴 타입 설정 기능 개발</li>
+<li>메뉴구성 / 메뉴 설정 기능 추가 개발</li>
+<li>옵션 최대 / 최소값 기능 개발</li>
 </ul>
 <h4 id="smartmenu-admin-front" style="position:relative;"><a href="#smartmenu-admin-front" aria-label="smartmenu admin front permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>smartmenu-admin-front</h4>
 <ul>
 <li>배달의 민족을 사용하는 사장님들의 메뉴 관리를 위한 서비스의 회사 내부 관리 웹 서비스 개발/운영개선</li>
 <li>19.08 ~ 20.01</li>
 <li><code class="language-text">TypeScript</code> <code class="language-text">React</code> <code class="language-text">Redux</code> <code class="language-text">Redux-Saga</code> <code class="language-text">React-Router</code> <code class="language-text">Antd</code></li>
+<li>메뉴 매핑 정보 체크 가능 개발</li>
+<li>1인분 메뉴 가격 최소 / 최대값 입력 제한 개발</li>
+<li>운영자 권한 관리 라이트버전 개발</li>
+<li>시스템 관련 라우팅 분리</li>
+<li>프랜차이즈 메뉴 할인 기능 개발</li>
 </ul>
 <h3 id="미미박스" style="position:relative;"><a href="#%EB%AF%B8%EB%AF%B8%EB%B0%95%EC%8A%A4" aria-label="미미박스 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://m.memebox.com/">미미박스</a></h3>
 <table>
