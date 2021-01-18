@@ -109,6 +109,7 @@ data-styled.g9[id="sc-global-eQvKip1"]{content:"sc-global-eQvKip1,"}/*!sc*/
 <li><a href="/heroku/gatsby-%EB%B0%B0%ED%8F%AC/#%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90%EC%84%9C-herokunodejs%EB%B0%8F-heroku-buildpack-static-%EB%B9%8C%EB%93%9C-%ED%8C%A9%EC%9D%84-%EC%84%A4%EC%A0%95%ED%95%A9%EB%8B%88%EB%8B%A4">애플리케이션에서 heroku/node.js및 heroku-buildpack-static 빌드 팩을 설정합니다.</a></li>
 <li><a href="/heroku/gatsby-%EB%B0%B0%ED%8F%AC/#heroku-%ED%94%8C%EB%9E%AB%ED%8F%BC-api%EB%A5%BC-appjson-%ED%99%9C%EC%9A%A9%ED%95%98%EB%A0%A4%EB%A9%B4-%EB%B9%8C%EB%93%9C-%ED%8C%A9%EC%9D%84-%EC%84%A0%ED%83%9D%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%B6%94%EA%B0%80-%ED%95%A0-%EC%88%98-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4">heroku 플랫폼 API를 app.json 활용하려면 빌드 팩을 선택적으로 추가 할 수 있습니다.</a></li>
 <li><a href="/heroku/gatsby-%EB%B0%B0%ED%8F%AC/#heroku%EB%8A%94-%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C-packagejson%EC%9D%98-build-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A5%BC-%EA%B0%90%EC%A7%80%ED%95%98%EA%B3%A0-%EC%8B%A4%ED%96%89%ED%95%A9%EB%8B%88%EB%8B%A4">Heroku는 자동으로 package.json의 build 스크립트를 감지하고 실행합니다.</a></li>
+<li><a href="/heroku/gatsby-%EB%B0%B0%ED%8F%AC/#%EB%88%84%EB%9D%BD-%EB%90%9C-%EB%AA%A8%EB%93%88">누락 된 모듈</a></li>
 </ul>
 </li>
 <li><a href="/heroku/gatsby-%EB%B0%B0%ED%8F%AC/#%EB%A7%88%EC%A7%80%EB%A7%89%EC%9C%BC%EB%A1%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EB%A3%A8%ED%8A%B8%EC%97%90-staticjson-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%B6%94%EA%B0%80-%ED%95%98%EC%97%AC-%EC%A0%95%EC%A0%81-%EC%9E%90%EC%82%B0%EC%9D%B4-%EC%9C%84%EC%B9%98-%ED%95%A0-%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC%EB%A5%BC-%EC%A0%95%EC%9D%98%ED%95%A9%EB%8B%88%EB%8B%A4">마지막으로 프로젝트의 루트에 static.json 파일을 추가 하여 정적 자산이 위치 할 디렉토리를 정의합니다.</a></li>
@@ -146,6 +147,25 @@ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static.git</cod
 		<span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"gatsby build"</span>
 	<span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
+<h3 id="누락-된-모듈" style="position:relative;"><a href="#%EB%88%84%EB%9D%BD-%EB%90%9C-%EB%AA%A8%EB%93%88" aria-label="누락 된 모듈 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>누락 된 모듈</h3>
+<ul>
+<li>package.json 또는 프로덕션 앱에서 모듈이 누락 된 경우는 Heroku에 의해 제거되었을 수 있습니다.</li>
+<li>일반적인 오류는 다음과 같습니다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="zsh"><pre class="language-zsh"><code class="language-zsh">internal/modules/cjs/loader.js:960
+  throw err;
+  ^
+
+Error: Cannot find module &#39;express&#39;</code></pre></div>
+<ul>
+<li>앱에 대해 더 작은 슬러그 크기를 만들기 위해 빌드 팩은 빌드가 끝날 때 devDependencies부터 잘라내어 package.json 슬러그가 dependencies 런타임에 나열된 항목만 포함하도록 합니다. 종속성이있는 경우 devDependencies를 dependencies 이동해 제거되지 않도록 합니다.</li>
+<li>다른 해결책은 가지 치기를 devDependencies 완전히 끄는 것 입니다. 이렇게 하려면 npm에 다음을 설정합니다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="zsh"><pre class="language-zsh"><code class="language-zsh">heroku config:set NPM_CONFIG_PRODUCTION=false</code></pre></div>
+<ul>
+<li>앱이 Yarn을 사용하는 경우 다음을 실행합니다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="zsh"><pre class="language-zsh"><code class="language-zsh">heroku config:set YARN_PRODUCTION=false</code></pre></div>
 <h2 id="마지막으로-프로젝트의-루트에-staticjson-파일을-추가-하여-정적-자산이-위치-할-디렉토리를-정의합니다" style="position:relative;"><a href="#%EB%A7%88%EC%A7%80%EB%A7%89%EC%9C%BC%EB%A1%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EB%A3%A8%ED%8A%B8%EC%97%90-staticjson-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%B6%94%EA%B0%80-%ED%95%98%EC%97%AC-%EC%A0%95%EC%A0%81-%EC%9E%90%EC%82%B0%EC%9D%B4-%EC%9C%84%EC%B9%98-%ED%95%A0-%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC%EB%A5%BC-%EC%A0%95%EC%9D%98%ED%95%A9%EB%8B%88%EB%8B%A4" aria-label="마지막으로 프로젝트의 루트에 staticjson 파일을 추가 하여 정적 자산이 위치 할 디렉토리를 정의합니다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>마지막으로 프로젝트의 루트에 static.json 파일을 추가 하여 정적 자산이 위치 할 디렉토리를 정의합니다.</h2>
 <ul>
 <li>heroku-buildpack-static 구성에서 이 파일의 모든 옵션을 확인할 수 있습니다.</li>
