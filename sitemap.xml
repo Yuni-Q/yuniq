@@ -35,7 +35,6 @@
 <url> <loc>https://yuni-q.github.io/develop/oop,-aop,-fp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/object/object-chapter-05-책임-할당하기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/frontend/크롤링/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/develop/node-https-적용/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/typescript/커스텀-타입-선언-파일/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/develop/github-education-name.com-사용하기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/develop/repository와-dao/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -81,10 +80,6 @@
 <url> <loc>https://yuni-q.github.io/tags/cross-env/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/tags/port/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/tags/html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/tags/node/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/tags/https/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/tags/certbot-auto/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yuni-q.github.io/tags/mkcert/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/tags/typesciprt/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/tags/version/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
