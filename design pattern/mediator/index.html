@@ -129,6 +129,7 @@ data-styled.g9[id="sc-global-eQvKip1"]{content:"sc-global-eQvKip1,"}/*!sc*/
 <li><a href="/design%20pattern/mediator/#%ED%8D%BC%EC%82%AC%EB%93%9C-%ED%8C%A8%ED%84%B4%EA%B3%BC%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C%EC%9A%94">퍼사드 패턴과의 차이점은 무엇일까요?</a></li>
 <li><a href="/design%20pattern/mediator/#%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4%EA%B3%BC%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C%EC%9A%94">옵저버 패턴과의 차이점은 무엇일까요?</a></li>
 <li><a href="/design%20pattern/mediator/#%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4%EA%B3%BC%EC%9D%98-%EC%B0%A8%EC%9D%B4%EB%A5%BC-%EB%AA%85%ED%99%95%ED%95%98%EA%B2%8C-%EC%95%8C%EA%B8%B0-%EC%9C%84%ED%95%B4-%EB%B9%84%EA%B5%90%ED%95%B4%EC%84%9C-%EC%A0%95%EB%A6%AC%ED%95%B4-%EB%B3%B4%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4">옵저버 패턴과의 차이를 명확하게 알기 위해 비교해서 정리해 보겠습니다.</a></li>
+<li><a href="/design%20pattern/mediator/#%EB%8B%A4%EB%A5%B8-%EC%98%88%EC%A0%9C">다른 예제</a></li>
 </ul></div></aside><div class="post-container__StyledDiv-wcqbpn-0 cUZFzY post-content"><h2 id="중재자-패턴은-행동-패턴으로-분류-됩니다" style="position:relative;"><a href="#%EC%A4%91%EC%9E%AC%EC%9E%90-%ED%8C%A8%ED%84%B4%EC%9D%80-%ED%96%89%EB%8F%99-%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C-%EB%B6%84%EB%A5%98-%EB%90%A9%EB%8B%88%EB%8B%A4" aria-label="중재자 패턴은 행동 패턴으로 분류 됩니다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>중재자 패턴은 행동 패턴으로 분류 됩니다.</h2>
 <ul>
 <li>
@@ -187,6 +188,7 @@ data-styled.g9[id="sc-global-eQvKip1"]{content:"sc-global-eQvKip1,"}/*!sc*/
 <hr>
 <h2 id="중개자-패턴의-장점을-정리해-보겠습니다" style="position:relative;"><a href="#%EC%A4%91%EA%B0%9C%EC%9E%90-%ED%8C%A8%ED%84%B4%EC%9D%98-%EC%9E%A5%EC%A0%90%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%B4-%EB%B3%B4%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4" aria-label="중개자 패턴의 장점을 정리해 보겠습니다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>중개자 패턴의 장점을 정리해 보겠습니다.</h2>
 <ul>
+<li>시스템에 들어있는 객체 사이에서 오가는 메시지의 종류를 확 줄이고 단순화시킬 수 있습니다.</li>
 <li>class들을 느슨한 결합 상태로 유지할 수 있습니다.</li>
 <li>객체들 사이에 Mediator를 넣어 연결관계를 캡슐화한다.</li>
 <li>Mediator는 M:N의 객체관계를 M:1로 전환합니다.</li>
@@ -219,6 +221,7 @@ data-styled.g9[id="sc-global-eQvKip1"]{content:"sc-global-eQvKip1,"}/*!sc*/
 <hr>
 <h2 id="적용범위" style="position:relative;"><a href="#%EC%A0%81%EC%9A%A9%EB%B2%94%EC%9C%84" aria-label="적용범위 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>적용범위</h2>
 <ul>
+<li>서로 연관된 GUI 구성요소들을 관리하기 위한 용도로 많이 쓰입니다.</li>
 <li>커뮤니케이션을 하고자 하는 객체가 있을 때 서로가 커뮤니케이션 하기 복잡한 경우 이를 해결해주고 서로 간 쉽게 해주며 커플링을 약화시켜주는 패턴이다.</li>
 <li>객체들간의 상호작용이 복잡해서 서로간의 의존관계가 구조화 되어있지 않고 이해하기 어려울 때. 즉, 서로 관련된 객체 사이의 복잡한 통신과 제어를 한 곳으로 집중시키고자 할 때 사용합니다.</li>
 <li>하나의 객체가 많은 다른 객체들을 참조하고 있어 이것을 재사용하기 어려울 때 사용합니다.</li>
@@ -335,6 +338,61 @@ data-styled.g9[id="sc-global-eQvKip1"]{content:"sc-global-eQvKip1,"}/*!sc*/
 <li>옵저버 패턴은 재사용성이 좋습니다. 그러나 복잡한 communication에서는 이해하기 힘듭니다. <code class="language-text">1개의 Publisher</code>와 N개의 Subscriber로 이루어져 있습니다.</li>
 <li>중개자 패턴은 재사용성이 안 좋습니다. 복잡한 communication에서 이해하기 쉽습니다. <code class="language-text">M개의 Publisher</code>, N개의 Subscriber 사이의 communication을 <code class="language-text">1개의 Mediator</code>를 이용해 캡슐화하고 있습니다.</li>
 </ul>
+<hr>
+<h2 id="다른-예제" style="position:relative;"><a href="#%EB%8B%A4%EB%A5%B8-%EC%98%88%EC%A0%9C" aria-label="다른 예제 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>다른 예제</h2>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Participant</span> <span class="token punctuation">{</span>
+	<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>chatroom <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token function">send</span><span class="token punctuation">(</span><span class="token parameter">message<span class="token punctuation">,</span> to</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>chatroom<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">,</span> to<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token function">receive</span><span class="token punctuation">(</span><span class="token parameter">message<span class="token punctuation">,</span> <span class="token keyword">from</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">from</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> to </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Chatroom</span> <span class="token punctuation">{</span>
+	<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>participants <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token function">register</span><span class="token punctuation">(</span><span class="token parameter">participant</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		participant<span class="token punctuation">.</span>chatroom <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>participants<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>participant<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token function">send</span><span class="token punctuation">(</span><span class="token parameter">message<span class="token punctuation">,</span> <span class="token keyword">from</span><span class="token punctuation">,</span> to</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>to<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token comment">// single message</span>
+			to<span class="token punctuation">.</span><span class="token function">receive</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> <span class="token keyword">from</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+			<span class="token comment">// broadcast message</span>
+			<span class="token keyword">this</span><span class="token punctuation">.</span>participants<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">participant</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>participant <span class="token operator">!==</span> <span class="token keyword">from</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					participant<span class="token punctuation">.</span><span class="token function">receive</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> <span class="token keyword">from</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> yoko <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Participant</span><span class="token punctuation">(</span><span class="token string">'Yoko'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> john <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Participant</span><span class="token punctuation">(</span><span class="token string">'John'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> paul <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Participant</span><span class="token punctuation">(</span><span class="token string">'Paul'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ringo <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Participant</span><span class="token punctuation">(</span><span class="token string">'Ringo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> chatroom <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Chatroom</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+chatroom<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span>yoko<span class="token punctuation">)</span><span class="token punctuation">;</span>
+chatroom<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span>john<span class="token punctuation">)</span><span class="token punctuation">;</span>
+chatroom<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span>paul<span class="token punctuation">)</span><span class="token punctuation">;</span>
+chatroom<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span>ringo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+yoko<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'All you need is love.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+yoko<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'I love you John.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+john<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Hey, no need to broadcast'</span><span class="token punctuation">,</span> yoko<span class="token punctuation">)</span><span class="token punctuation">;</span>
+paul<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Ha, I heard that!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ringo<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Paul, what do you think?'</span><span class="token punctuation">,</span> paul<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <!-- ---
 
 ![](./images/before.png)
