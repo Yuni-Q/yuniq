@@ -163,6 +163,10 @@ data-styled.g10[id="sc-global-eQvKip1"]{content:"sc-global-eQvKip1,"}/*!sc*/
 <li>시스템을 설계하다 보면 이벤트가 발생하는 객체가 여러개(M)이고, 이들 이벤트를 받는 곳도 여러 곳(N)인 경우가 있습니다. 이런 경우에 모든 이벤트들을 주고 받기 위해서는 M:N의 관계가 생기게 됩니다. 이렇게 되면 전체 시스템이 복잡해지는 것은 당연하다. Mediator(중재자) 패턴은 이런 M:N 관계에 중간 객체를 도입하여 각각 M:1 관계를 만들어 주는 패턴입니다.</li>
 </ul>
 <hr>
+<p><img src="/2b35098e79f1c554009d809ddeb0969b/before.svg"></p>
+<hr>
+<p><img src="/f5a7d7b6d966634424c92ca69edf379c/after.svg"></p>
+<hr>
 <h2 id="m1의-장점은-무엇일까요" style="position:relative;"><a href="#m1%EC%9D%98-%EC%9E%A5%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C%EC%9A%94" aria-label="m1의 장점은 무엇일까요 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>M:1의 장점은 무엇일까요?</h2>
 <ul>
 <li>M개의 object 사이에 이들의 관계를 control 하는 Mediator를 하나 넣어서 Mediator가 모든 object들의 communication을 관리하도록 합니다.</li>
@@ -234,9 +238,12 @@ data-styled.g10[id="sc-global-eQvKip1"]{content:"sc-global-eQvKip1,"}/*!sc*/
 <hr>
 <h2 id="mediator-pattern을-구현해-보겠습니다" style="position:relative;"><a href="#mediator-pattern%EC%9D%84-%EA%B5%AC%ED%98%84%ED%95%B4-%EB%B3%B4%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4" aria-label="mediator pattern을 구현해 보겠습니다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mediator Pattern을 구현해 보겠습니다.</h2>
 <hr>
+<p><img src="/8275d91e581ea0aae3fff7c9689534c5/mediator.svg"></p>
+<hr>
 <h2 id="colleague" style="position:relative;"><a href="#colleague" aria-label="colleague permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Colleague</h2>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Colleague</span> <span class="token punctuation">{</span>
 	<span class="token keyword">protected</span> mediator<span class="token operator">:</span> Mediator<span class="token punctuation">;</span>
+	<span class="token keyword">abstract</span> id<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
 
 	<span class="token function">join</span><span class="token punctuation">(</span>mediator<span class="token operator">:</span> Mediator<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 		<span class="token keyword">this</span><span class="token punctuation">.</span>mediator <span class="token operator">=</span> mediator<span class="token punctuation">;</span>
