@@ -94,4 +94,5 @@
 <url> <loc>https://yuni-q.github.io/memo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/particle-system/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/scroll/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/wheel/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
