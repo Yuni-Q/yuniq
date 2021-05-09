@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://yuni-q.github.io/sitemap.xml
+Host: https://yuni-q.github.io
