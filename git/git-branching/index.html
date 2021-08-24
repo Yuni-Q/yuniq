@@ -1,0 +1,486 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=2"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:Catamaran;font-weight:800;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.2;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:56px;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:20px;color:inherit;font-family:Catamaran;font-weight:700;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.2;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:6px;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:2px;}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#0687f0;text-decoration:none;box-shadow:none;}a:hover,a:active{text-decoration:underline;}a.gatsby-resp-image-link{box-shadow:none;text-decoration:none;}a:hover{text-decoration:none;}</style><style data-href="/styles.0ecaabf05af39cde17ef.css" id="gatsby-global-css">@import url(https://fonts.googleapis.com/css?family=Lato:400);@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:100;src:local("Noto Sans KR Thin "),local("Noto Sans KR-Thin"),url(/static/noto-sans-kr-latin-100-2de137ca3e12ea146ee47485a97f1e78.woff2) format("woff2"),url(/static/noto-sans-kr-latin-100-b965647685dd9fc531d1f8a1cc25e024.woff) format("woff")}@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:300;src:local("Noto Sans KR Light "),local("Noto Sans KR-Light"),url(/static/noto-sans-kr-latin-300-4f773a0fce88aa857d70b56c5b0a1d26.woff2) format("woff2"),url(/static/noto-sans-kr-latin-300-ee87751dac814562bac316d848e35748.woff) format("woff")}@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans KR Regular "),local("Noto Sans KR-Regular"),url(/static/noto-sans-kr-latin-400-be09f2ced7ff9fa6eda5f0416e2fc840.woff2) format("woff2"),url(/static/noto-sans-kr-latin-400-4c50be0fe5b21a153b8e40a392c2d3fe.woff) format("woff")}@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:500;src:local("Noto Sans KR Medium "),local("Noto Sans KR-Medium"),url(/static/noto-sans-kr-latin-500-416698c2fc4b3951f8d63d3d2ae23900.woff2) format("woff2"),url(/static/noto-sans-kr-latin-500-28601458e118110e494903a1fcd6dcf5.woff) format("woff")}@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans KR Bold "),local("Noto Sans KR-Bold"),url(/static/noto-sans-kr-latin-700-04e782e08729f3725ae5a9c95da0c8ba.woff2) format("woff2"),url(/static/noto-sans-kr-latin-700-b9e989a96027f839a9569d2d011e0b71.woff) format("woff")}@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:900;src:local("Noto Sans KR Black "),local("Noto Sans KR-Black"),url(/static/noto-sans-kr-latin-900-c41f1395489a117ca36d550142a1695f.woff2) format("woff2"),url(/static/noto-sans-kr-latin-900-589f5fbf84d9dc9984a969bae969fd60.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:100;src:local("Catamaran Thin "),local("Catamaran-Thin"),url(/static/catamaran-latin-100-3570195a7b5f619dd9b2419d8fa3f089.woff2) format("woff2"),url(/static/catamaran-latin-100-e82908f57f6d2f23eb9876b2d6868195.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:200;src:local("Catamaran Extra Light "),local("Catamaran-Extra Light"),url(/static/catamaran-latin-200-987ea210308405ac77ba2f36430a70c9.woff2) format("woff2"),url(/static/catamaran-latin-200-bb5993d2f001b739bb9ab7c3ed9725c3.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:300;src:local("Catamaran Light "),local("Catamaran-Light"),url(/static/catamaran-latin-300-2b8a4bd13e9d5ba755f010f8732b0bb6.woff2) format("woff2"),url(/static/catamaran-latin-300-c2696c65c33dcf37871b72bad51ee1ce.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:400;src:local("Catamaran Regular "),local("Catamaran-Regular"),url(/static/catamaran-latin-400-640947b787a38ec35d097129637d9130.woff2) format("woff2"),url(/static/catamaran-latin-400-97e5bc807a3e915e3fbf40ce5fcb1128.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:500;src:local("Catamaran Medium "),local("Catamaran-Medium"),url(/static/catamaran-latin-500-884483dd213f37ae3b5c98f73dd190a5.woff2) format("woff2"),url(/static/catamaran-latin-500-412cf386e31213e3601cb2132b9c4c2d.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:600;src:local("Catamaran SemiBold "),local("Catamaran-SemiBold"),url(/static/catamaran-latin-600-eb6ebda25331e50d3f42c45a41f613bb.woff2) format("woff2"),url(/static/catamaran-latin-600-215c58c6114e0556cb1c332c0fda463a.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:700;src:local("Catamaran Bold "),local("Catamaran-Bold"),url(/static/catamaran-latin-700-3196f49881b324fa5a5f937875cc380f.woff2) format("woff2"),url(/static/catamaran-latin-700-05f6e51c518dd3b521b258e5c05d0e72.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:800;src:local("Catamaran ExtraBold "),local("Catamaran-ExtraBold"),url(/static/catamaran-latin-800-601b1d0f1b78fd65c3205b2c004bbe60.woff2) format("woff2"),url(/static/catamaran-latin-800-3b1675e4ede7e86ec79fa84c1203908e.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:900;src:local("Catamaran Black "),local("Catamaran-Black"),url(/static/catamaran-latin-900-6bb5f96614acb7754020b922e1a63d24.woff2) format("woff2"),url(/static/catamaran-latin-900-79292dba48851cc3a212863c860d8f09.woff) format("woff")}.bio{margin-bottom:24px}.bio .author-description{display:flex}.bio .author-image{margin-top:0;margin-right:12px;margin-bottom:0;min-width:72px}.bio .author-name-prefix{font-size:90%;margin-right:4px}.bio .author-name-content{display:inline-block;font-size:95%;padding:2px 6px;font-weight:bolder;border-radius:8px;transform-origin:center;animation:flutter 2s linear infinite}.bio .author-introduction{margin-top:4px;font-size:80%;line-height:1.4}.bio .author-socials{margin-top:-4px}.bio a{margin-right:8px;font-size:80%}.bio a.visited{text-decoration:none}@keyframes flutter{0%{transform:rotate(0deg)}35%{transform:rotate(0deg)}40%{transform:rotate(-5deg)}60%{transform:rotate(5deg)}65%{transform:rotate(0deg)}to{transform:rotate(0deg)}}.custom-hr{margin:64px;background:linear-gradient(72deg,#ffcdd2,#7e57c2);border:none;height:2px}.navigator{margin:40px 0;display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0}.navigator li{margin-bottom:12px}.navigator a{padding:7px 16px 8px;border-radius:6px;font-size:12px;opacity:.8}.social-share{text-align:right;height:100%}.resp-sharing-button__icon,.resp-sharing-button__link{display:inline-block;vertical-align:middle;border:none}.resp-sharing-button__link{text-decoration:none;color:#fff;margin:4px;height:33px}.resp-sharing-button__link .service-label{font-size:12px;padding-right:4px}.resp-sharing-button{height:33px;border-radius:6px;transition:25ms ease-out;padding:3px 8px 3px 10px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}.resp-sharing-button__icon svg{width:1em;height:1.5em;margin-right:.4em;vertical-align:top}.resp-sharing-button__icon{stroke:#fff;fill:none}.resp-sharing-button__icon--solid{fill:#fff;stroke:none}.sponsor-button{text-align:right;margin:4px}.sponsor-button .bmc-button{display:inline-block;padding:0 7px;width:133px;height:33px;text-decoration:none;background-color:#bb5794;color:#fff;border:1px solid transparent;border-radius:6px;letter-spacing:-.08px;box-sizing:border-box;font-size:12px;line-height:30px;text-align:left}.sponsor-button .bmc-button:active,.sponsor-button .bmc-button:hover{background-color:#a0457d}.sponsor-button .bmc-button img{width:20px;margin-bottom:1px;box-shadow:none;border:none;vertical-align:middle}.sponsor-button .bmc-button span{margin-left:6px}.blind{overflow:hidden;position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px}.wrap{height:100%;background-color:#f2f2f2}.wrap .header{position:relative;height:15px;background-color:#f9f978;border-bottom:1px solid #eee;cursor:move}.memo{position:absolute;background-color:#ffffe0;border:1px solid #eee}.content{position:relative;overflow-x:hidden;overflow-y:auto;padding:10px}.content .textarea{outline:none}.btn_close{top:0;height:15px;appearance:button;-webkit-appearance:button;-moz-appearance:button;border:0;background-color:#fff;cursor:pointer;outline:0}.btn_close,.btn_close:after{position:absolute;right:0;width:15px;text-align:center}.btn_close:after{top:-1px;content:"\D7";font-size:15px;line-height:15px;color:#666}.btn_size{position:absolute;bottom:0;right:0;width:15px;height:15px;appearance:button;-webkit-appearance:button;-moz-appearance:button;border:0;background:transparent;cursor:nwse-resize;outline:0;text-align:center}textarea{border:none;background-color:none;resize:none;background-color:inherit}
+
+/*!
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */.spinner{margin:0 auto}.la-ball-pulse,.la-ball-pulse>div{position:relative;box-sizing:border-box}.la-ball-pulse{display:flex;justify-content:center;align-items:center;font-size:0;color:#d7dbe6}.la-ball-pulse.la-dark{color:#333}.la-ball-pulse>div{display:inline-block;float:none;background-color:currentColor;border:0 solid}.la-ball-pulse{width:54px;height:18px}.la-ball-pulse>div:first-child{animation-delay:-.2s}.la-ball-pulse>div:nth-child(2){animation-delay:-.1s}.la-ball-pulse>div:nth-child(3){animation-delay:0ms}.la-ball-pulse>div{width:8px;height:8px;margin:4px;border-radius:100%;animation:ball-pulse 1s ease infinite}.la-ball-pulse.la-sm{width:26px;height:8px}.la-ball-pulse.la-sm>div{width:4px;height:4px;margin:2px}.la-ball-pulse.la-2x{width:108px;height:36px}.la-ball-pulse.la-2x>div{width:20px;height:20px;margin:8px}.la-ball-pulse.la-3x{width:162px;height:54px}.la-ball-pulse.la-3x>div{width:30px;height:30px;margin:12px}@keyframes ball-pulse{0%,60%,to{opacity:1;transform:scale(1)}30%{opacity:.1;transform:scale(.01)}}.footer{padding-top:52px;text-align:center;font-size:12px}.footer a{text-decoration:none!important}.home-header{margin-top:0;border-bottom:none;font-weight:900;font-size:48px;letter-spacing:-2px}.link{margin:24px;box-shadow:none;text-decoration:none;color:inherit;word-break:keep-all}.link,.top{position:relative}.top{width:100%;height:60px;background:linear-gradient(-45deg,#fff,#ddd,#000);background-size:182% 200%;animation:Gradient 7s ease infinite;padding-right:8px}.top .link{position:relative;display:inline-block;font-size:20px;padding-top:16px;color:#fff;opacity:.7;font-family:Catamaran;font-weight:800;margin:0 0 0 76px}.top .link:after{z-index:100;position:absolute;left:-64px;top:4px;display:inline-block;background:url(/favicon.png);background-repeat:no-repeat;background-size:contain;width:56px;height:56px;content:""}@keyframes Gradient{0%{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}.category-container{position:sticky;position:-webkit-sticky;top:0;line-height:0;white-space:nowrap;overflow-x:scroll;-ms-overflow-style:none;overflow:-moz-scrollbars-none;z-index:1;padding:6px 20px}.category-container .item{display:inline-block;margin:.25rem 6px .25rem 0;border-radius:15px;white-space:normal;box-sizing:border-box;cursor:pointer}.category-container .item div{display:block;padding:14px 16px 16px;font-size:13px;box-sizing:border-box}.category-container .item:last-child{margin-right:0}.category-container::-webkit-scrollbar{display:none}.thumbnail-container{min-height:calc(100vh - 3.5rem);margin:16px -3.25rem}@media (max-width:660px){.thumbnail-container{padding:0 16px}}body.light{background-color:#fff;text-shadow:0 0 .1px rgba(0,0,0,.3)}body.light .home-header{color:#333}body.light .bio .author-name-content{background-color:#ecf0f2}body.light .bio .author-introduction{color:#7d7d7d}body.light .bio a{color:navy}body.light .category-container{border-color:#ecf0f2;border-style:solid;border-width:1px 6px;background-color:#f4f7f8}body.light .category-container .item{border:1px solid #ecf0f2;background-color:#fff;box-shadow:0 1px 1px rgba(0,0,0,.1)}body.light .category-container .item a{color:#666}body.light .category-container .item[aria-selected=true]{border:2px solid #909da1;font-weight:bolder}body.light .category-container .item[aria-selected=true] a{color:#636c6e}body.light .thumbnail h3{color:#333}body.light .thumbnail p{color:#7d7d7d}body.light .footer{color:#aaa}body.light .footer a{color:#333}body.light .navigator a{background-color:#fceff7;color:#cc007a}body.dark{background-color:#282c35;text-shadow:0 0 .1px hsla(0,0%,100%,.3)}body.dark,body.dark .home-header{color:#eee}body.dark .bio .author-name-content{background-color:#384454}body.dark .bio .author-introduction{color:#d8d7d7}body.dark .bio a{color:#9fa8da}body.dark .category-container{border-color:#384454;border-style:solid;border-width:1px 6px;background-color:#24272c}body.dark .category-container .item{border:1px solid #384454;background-color:#282c35;box-shadow:0 1px 1px hsla(0,0%,100%,.1)}body.dark .category-container .item a{color:#d8d7d7}body.dark .category-container .item[aria-selected=true]{border:2px solid #666;font-weight:bolder}body.dark .category-container .item[aria-selected=true] a{color:#fff}body.dark .thumbnail h3{color:#eee}body.dark .footer,body.dark .thumbnail p{color:#d8d7d7}body.dark .footer a{color:#fff}body.dark blockquote{border-left:4px solid hsla(0,0%,100%,.822)}body.dark h1,body.dark h2{border-bottom-color:hsla(0,0%,100%,.3)}body.dark .navigator a{background-color:#fceff7;color:#cc007a}*,:after,:before{box-sizing:inherit}img{max-width:100%;height:auto;margin:0}.u-cf:after,.u-cf:before{content:" ";display:table}.u-cf:after{clear:both}.u-hug{margin-top:0!important}.u-pullRight{float:right}.u-keyline{position:relative}.u-keyline:before{content:"";position:absolute;top:0;left:0;right:0;border-top:1px solid #ddd}.u-link{display:inline-block;margin-top:14px;position:relative;background-image:linear-gradient(180deg,#96ddcf 0,#96ddcf);background-position:0 100%;background-repeat:repeat-x;background-size:2px 2px;border-bottom:0;text-decoration:none}.u-link:hover{background-image:linear-gradient(180deg,#fcaca3 0,#fcaca3)}.u-link.zero{margin-bottom:0;margin-top:50px}.u-shadow{text-shadow:2px 2px 0 #6fd1bd;transition:text-shadow .2s ease-in-out}a:hover .u-shadow{text-shadow:-2px -2px 0 salmon}.Title{font-weight:900;line-height:1.1;margin-top:0;margin-bottom:0;text-transform:uppercase;display:block}.l-Wrapper{margin-left:auto;margin-right:auto}.l-Header{margin-top:51px}.l-Header,.l-Header-col{margin-bottom:unitSize(4)}.l-Header-col{margin-top:unitSize(4)}.l-Section{margin-top:unitSize(8)}.l-Section+.l-Section{position:relative;border-top:1px solid #ddd}.l-Section+.l-Section:before{content:"";position:absolute;top:unitSize(0,-.1);border-top:.153em solid;width:unitSize(5)}.l-Section-content,.l-Section-title{margin-top:unitSize(4)}.l-Section-content>:first-child{margin-top:0}.l-Section-content>p:first-child,.l-Section-content>ul:first-child{margin-top:.3rem}.l-Footer{font-size:1.4rem;display:flex;flex-wrap:wrap;justify-content:space-between;margin:unitSize(16) unitSize(2)/-2 unitSize(4);padding-top:unitSize(4)}.l-Footer a{text-decoration:none;display:inline-block}.l-Footer a:not(:last-child){margin-right:unitSize(2)}.l-Footer a:hover{color:#111}.l-Footer-col{padding-left:unitSize(2)/2;padding-right:unitSize(2)/2}.Tag{color:#111;text-shadow:1px 1px 0 hsla(0,0%,100%,.4);font-weight:700;line-height:1;position:relative;display:inline-block;padding-left:unitSize(1);padding-right:unitSize(1)}.Tag:before{content:"";position:absolute;z-index:-1;top:0;left:0;right:0;height:1em;bottom:0;margin:auto;border-radius:.2rem;background-color:rgba(111,209,189,.5);transition:all .8s ease-in-out .4s}.Tag:hover:before{transform:scale(1.05,2.4);background-color:#6fd1bd;transition-delay:0s;transition-duration:.2s}@page{margin:2.2cm 2.2cm 1.8cm}table thead th{padding:0}h2{margin-top:30px}details>summary:first-of-type{display:list-item;counter-increment:list-item 0;list-style:inside disclosure-closed}details h3,details h4{display:inline-block}details[open]>summary:first-of-type{list-style-type:disclosure-open}.snowflakes{z-index:-1;position:absolute;top:0;left:0}body{font-family:Noto Sans KR,sans-serif;background-color:#fff;-webkit-text-size-adjust:antialiased;-moz-osx-font-smoothing:grayscale;transition:background-color .3s,color .3s}.thumbnail{display:block;padding:4px 4px 12px;box-shadow:none;transition:text-shadow .3s,opacity .4s;opacity:0}.thumbnail p{font-size:90%;line-height:1.4;margin-bottom:0}.thumbnail h3{margin-top:0}.thumbnail.visible{opacity:1}.gatsby-highlight-code-line{background-color:#022a4b;display:block;margin-right:-1.2em;margin-left:-1.2em;padding-right:1em;padding-left:.75em;border-left:.35em solid #0687f0}blockquote{color:#999}code{font-weight:500!important}code[class*=language-],pre[class*=language-]{color:#e0e0e0;background:none;font-family:Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.6;font-size:13px;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;-ms-overflow-style:none;overflow:-moz-scrollbars-none}pre[class*=language-]::-webkit-scrollbar{display:none}pre[class*=language-]{padding:1.2em;margin:1.5em 0;overflow:auto;border-radius:.6em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#212121}:not(pre)>code[class*=language-]{padding:.11em .3em;margin:0 .1em;border-radius:.3em;white-space:normal;border:1.2px solid #da3a6a;background:#fffbfe;color:#da3a6a}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#616161}.token.punctuation{color:#e0e0e0}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#ff9100}.token.class-name,.token.constant,.token.property,.token.symbol{color:#ff0}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#b388ff}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#00e676}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 2.32.13"/><style data-styled="" data-styled-version="5.3.0">.dHbGsF{-webkit-transition:all 0.3s ease;transition:all 0.3s ease;padding-top:4px;color:#78757a;width:32px;}/*!sc*/
+.dHbGsF:hover{color:#fff;}/*!sc*/
+@media (max-width:800px){.dHbGsF:hover{color:#78757a;}}/*!sc*/
+data-styled.g3[id="github-icon__StyledSVG-sc-16inf4y-0"]{content:"dHbGsF,"}/*!sc*/
+.hNVawn{outline:0;background:#fff;margin:10px 0;float:right;padding:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:5px;border:0;cursor:pointer;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;height:40px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;opacity:0.75;overflow:hidden;position:relative;-webkit-transform:scale(0.75);-ms-transform:scale(0.75);transform:scale(0.75);-webkit-transition:opacity 0.3s ease;transition:opacity 0.3s ease;vertical-align:middle;width:40px;}/*!sc*/
+.hNVawn:hover{background:black;}/*!sc*/
+@media (max-width:800px){.hNVawn:hover{background:#fff;}}/*!sc*/
+.hNVawn .theme1{border:none;border-radius:50%;height:24px;overflow:visible;position:relative;-webkit-transform:scale(0.55);-ms-transform:scale(0.55);transform:scale(0.55);width:24px;-webkit-transition:all 0.45s ease 0s;transition:all 0.45s ease 0s;background:#78757a;}/*!sc*/
+.hNVawn .theme1::before{border-radius:50%;border:none;content:'';height:24px;opacity:0;position:absolute;right:-9px;top:-9px;-webkit-transform:translate(14px,-14px);-ms-transform:translate(14px,-14px);transform:translate(14px,-14px);-webkit-transition:-webkit-transform 0.45s ease 0s;-webkit-transition:transform 0.45s ease 0s;transition:transform 0.45s ease 0s;width:24px;}/*!sc*/
+.hNVawn .theme1::after{border-radius:50%;box-shadow:0 -23px 0 #78757a,0 23px 0 #78757a,23px 0 0 #78757a,-23px 0 0 #78757a,15px 15px 0 #78757a,-15px 15px 0 #78757a,15px -15px 0 #78757a,-15px -15px 0 #78757a;content:'';height:8px;left:50%;margin:-4px 0px 0px -4px;position:absolute;top:50%;width:8px;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:all 0.35s ease 0s;transition:all 0.35s ease 0s;}/*!sc*/
+.hNVawn .theme2{background:none;border-radius:50%;border:0;height:24px;opacity:0;position:absolute;right:0;top:0;-webkit-transform:translate(14px,-14px);-ms-transform:translate(14px,-14px);transform:translate(14px,-14px);-webkit-transition:opacity 0.25s ease 0s,-webkit-transform 0.45s ease 0s;-webkit-transition:opacity 0.25s ease 0s,transform 0.45s ease 0s;transition:opacity 0.25s ease 0s,transform 0.45s ease 0s;width:24px;}/*!sc*/
+.hNVawn:hover .theme1{background:#fff;border:none;}/*!sc*/
+.hNVawn:hover .theme1::before{border-radius:50%;border:none;}/*!sc*/
+.hNVawn:hover .theme1::after{border-radius:50%;box-shadow:0 -23px 0 #fff,0 23px 0 #fff,23px 0 0 #fff,-23px 0 0 #fff,15px 15px 0 #fff,-15px 15px 0 #fff,15px -15px 0 #fff,-15px -15px 0 #fff;}/*!sc*/
+.hNVawn:hover .snow{fill:#fff;}/*!sc*/
+.hNVawn:hover .github{color:#fff;}/*!sc*/
+@media (max-width:800px){.hNVawn:hover .theme1{background:#78757a;border:none;}.hNVawn:hover .theme1::before{border-radius:50%;border:none;}.hNVawn:hover .theme1::after{border-radius:50%;box-shadow:0 -23px 0 #78757a,0 23px 0 #78757a,23px 0 0 #78757a,-23px 0 0 #78757a,15px 15px 0 #78757a,-15px 15px 0 #78757a,15px -15px 0 #78757a,-15px -15px 0 #78757a;}.hNVawn:hover .snow{fill:#78757a;}.hNVawn:hover .github{color:#78757a;}}/*!sc*/
+data-styled.g4[id="top__StyledButton-sc-115r8ok-0"]{content:"hNVawn,"}/*!sc*/
+.iMWvgp{-webkit-transition:all 0.3s ease;transition:all 0.3s ease;width:28px;fill:#78757a;}/*!sc*/
+data-styled.g5[id="top__StyledSvg-sc-115r8ok-1"]{content:"iMWvgp,"}/*!sc*/
+body{-webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;background-color:#fff;text-shadow:0 0 0.1px rgba(0,0,0,0.3);color:inherit;}/*!sc*/
+body .home-header{color:#333;}/*!sc*/
+body .bio .author-name-content{background-color:#ecf0f2;}/*!sc*/
+body .bio .author-introduction{color:#7d7d7d;}/*!sc*/
+body .bio a{color:#000080;}/*!sc*/
+body .category-container{border-top:1px solid #ecf0f2;border-bottom:1px solid #ecf0f2;border-right:6px solid #ecf0f2;border-left:6px solid #ecf0f2;background-color:#f4f7f8;}/*!sc*/
+body .category-container .item{border:1px solid #ecf0f2;background-color:#fff;-webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.1);box-shadow:0px 1px 1px rgba(255,255,255,0.1);}/*!sc*/
+body .category-container .item a{color:#666;}/*!sc*/
+body .category-container .item[aria-selected='true']{border:2px solid #909da1;font-weight:bolder;}/*!sc*/
+body .category-container .item[aria-selected='true'] a{color:#636c6e;}/*!sc*/
+body .thumbnail h3{color:#333;}/*!sc*/
+body .thumbnail p{color:#7d7d7d;}/*!sc*/
+body .footer{color:#aaa;}/*!sc*/
+body .footer a{color:#333;}/*!sc*/
+body blockquote{border-left:none;}/*!sc*/
+body h1,body h2{border-bottom-color:#none;}/*!sc*/
+body .navigator a{background-color:#fceft7;color:#cc007a;}/*!sc*/
+data-styled.g6[id="sc-global-eQvKip1"]{content:"sc-global-eQvKip1,"}/*!sc*/
+.cmlOBH{display:block;min-width:320px;min-height:0;margin:0px auto;background:lightgray;}/*!sc*/
+data-styled.g26[id="pages__Ins-sc-1bddmy0-0"]{content:"cmlOBH,"}/*!sc*/
+.cvaYCq hr{display:none;}/*!sc*/
+data-styled.g70[id="post-container__StyledDiv-wcqbpn-0"]{content:"cvaYCq,"}/*!sc*/
+.foZQLY{-webkit-order:1;-ms-flex-order:1;order:1;width:240px;position:fixed;max-height:90vh;overflow-y:scroll;top:68px;right:32px;}/*!sc*/
+@media (max-width:1200px){.foZQLY{display:none;}}/*!sc*/
+.foZQLY .post-toc{z-index:10;}/*!sc*/
+.foZQLY .post-toc ul{padding-left:16px;list-style:none;margin:0;}/*!sc*/
+.foZQLY .post-toc ul li{margin-bottom:4px;}/*!sc*/
+.foZQLY .post-toc ul li p{margin:0;}/*!sc*/
+.foZQLY .post-toc ul li a{-webkit-text-decoration:none;text-decoration:none;color:#fff;font-size:14px;}/*!sc*/
+.foZQLY .post-toc ul li a:hover,.foZQLY .post-toc ul li a:focus{color:#212329;}/*!sc*/
+.foZQLY .post-toc ul li a.active{color:#212329;}/*!sc*/
+data-styled.g71[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"foZQLY,"}/*!sc*/
+</style><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="icon" href="/favicon-32x32.png?v=f43f3711448855a8892885ac5272582b" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=f43f3711448855a8892885ac5272582b"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=f43f3711448855a8892885ac5272582b"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=f43f3711448855a8892885ac5272582b"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=f43f3711448855a8892885ac5272582b"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=f43f3711448855a8892885ac5272582b"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=f43f3711448855a8892885ac5272582b"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=f43f3711448855a8892885ac5272582b"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=f43f3711448855a8892885ac5272582b"/><title data-react-helmet="true">git branching | yuni-q 블로그</title><meta data-react-helmet="true" name="description" content="대표적인 브랜칭(branching) 전략 Git-flow GitHub-flow Git-flow Git-flow는 브랜치를 크게 4가지로 나누어 개발하는 전략입니다. 메인 브랜치(Main branch) 피처 브랜치(Feature branch) 또는 토픽 브랜치(Topic branch) 릴리스 브랜치(Release branch) 핫픽스 브랜치(Hotfix branch) 가장 중심이 되는 브랜치는 master와 develop 브랜치이며, merge된 feature, release, hotfix…"/><meta data-react-helmet="true" property="og:title" content="git branching"/><meta data-react-helmet="true" property="og:description" content="대표적인 브랜칭(branching) 전략 Git-flow GitHub-flow Git-flow Git-flow는 브랜치를 크게 4가지로 나누어 개발하는 전략입니다. 메인 브랜치(Main branch) 피처 브랜치(Feature branch) 또는 토픽 브랜치(Topic branch) 릴리스 브랜치(Release branch) 핫픽스 브랜치(Hotfix branch) 가장 중심이 되는 브랜치는 master와 develop 브랜치이며, merge된 feature, release, hotfix…"/><meta data-react-helmet="true" property="og:image" content="https://yuni-q.github.io/favicon.png"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="yuni-q"/><meta data-react-helmet="true" name="twitter:title" content="git branching"/><meta data-react-helmet="true" name="twitter:description" content="대표적인 브랜칭(branching) 전략 Git-flow GitHub-flow Git-flow Git-flow는 브랜치를 크게 4가지로 나누어 개발하는 전략입니다. 메인 브랜치(Main branch) 피처 브랜치(Feature branch) 또는 토픽 브랜치(Topic branch) 릴리스 브랜치(Release branch) 핫픽스 브랜치(Hotfix branch) 가장 중심이 되는 브랜치는 master와 develop 브랜치이며, merge된 feature, release, hotfix…"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-3794f618d5302340783a.js"/><link as="script" rel="preload" href="/framework-c34ea17250b9b4aae64e.js"/><link as="script" rel="preload" href="/ff239f9d-3a8f4051140e5e25b2e9.js"/><link as="script" rel="preload" href="/d91e9ae9-66426ac7bb836cc74da0.js"/><link as="script" rel="preload" href="/6008db0b-1dc1a1d7d394f384ef9a.js"/><link as="script" rel="preload" href="/app-696553e1f2cd9b793b78.js"/><link as="script" rel="preload" href="/styles-e9d24b1846c7d6eb9685.js"/><link as="script" rel="preload" href="/34adb1478420fd66b3d91d1c84a564b01a7c862d-e5ccf43708c1863e0198.js"/><link as="script" rel="preload" href="/ea019b99e59b420919ecbbd1b1aa2adb53041293-e2a6c47bd9c452bd6107.js"/><link as="script" rel="preload" href="/8bc2a9ce1123562e8ddbd872445825f2451419c2-79c7aca30f4910a1e880.js"/><link as="script" rel="preload" href="/5f65b4addbe4a8751c14ceb3e63a9207163060e3-fa999b9a9d69fad97db1.js"/><link as="script" rel="preload" href="/component---src-pages-index-tsx-8ff7bbe43db1d1a77265.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-tsx-d5c0cfa48cf2bc979892.js"/><link as="fetch" rel="preload" href="/page-data/git/git-branching/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3128451518.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/96099027.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><script id="ads" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=1;</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="top"><a class="link" href="/">Yuni-Q</a><button class="top__StyledButton-sc-115r8ok-0 hNVawn"><a href="https://github.com/Yuni-Q/blog" class="github" aria-label="GitHub"><svg class="github-icon__StyledSVG-sc-16inf4y-0 dHbGsF github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg></a></button><button class="top__StyledButton-sc-115r8ok-0 hNVawn"><div class="theme1"></div><div class="theme2"></div></button><button class="top__StyledButton-sc-115r8ok-0 hNVawn"><svg class="top__StyledSvg-sc-115r8ok-1 iMWvgp snow" version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 23.9 22.9"><path d="M23.9,10c0-0.3-0.2-0.5-0.4-0.6l-1.1-0.3C22.1,9.1,22,9,21.9,8.8c-0.1-0.2,0-0.4,0.1-0.6l0.8-0.9 c0.2-0.2,0.2-0.5,0-0.7c-1.2-1.4-3.1-2-5-1.4c-0.4,0.1-0.9,0.4-1.4,0.7c0.1-0.6,0.2-1.1,0.2-1.6c0-1.9-1.2-3.6-2.9-4.3 c-0.2-0.1-0.5,0-0.7,0.2l-0.6,1c-0.1,0.2-0.3,0.3-0.5,0.3c-0.2,0-0.4-0.1-0.5-0.3l-0.6-1C10.7,0,10.4-0.1,10.2,0 C8.5,0.7,7.3,2.4,7.3,4.3c0,0.5,0.1,1,0.2,1.6C7,5.6,6.5,5.4,6.1,5.2c-1.8-0.6-3.8,0-5,1.4c-0.2,0.2-0.2,0.5,0,0.7l0.8,0.9 C2,8.4,2.1,8.6,2,8.8c0,0.2-0.2,0.3-0.4,0.4L0.4,9.5C0.2,9.5,0,9.8,0,10c0.1,1.8,1.4,3.5,3.2,4c0.4,0.1,1,0.2,1.5,0.3 c-0.4,0.4-0.8,0.8-1.1,1.1c-1.1,1.6-1.2,3.6-0.2,5.2c0.1,0.2,0.4,0.3,0.7,0.2l1.1-0.4c0.2-0.1,0.4-0.1,0.6,0C6,20.6,6,20.8,6,21.1 l-0.1,1.2c0,0.3,0.2,0.5,0.4,0.6c1.8,0.4,3.7-0.2,4.8-1.8c0.3-0.4,0.5-0.8,0.8-1.4c0.2,0.5,0.5,1,0.8,1.4c1.1,1.6,3.1,2.2,4.8,1.8 c0.3-0.1,0.4-0.3,0.4-0.6l-0.1-1.2c0-0.3,0.1-0.4,0.2-0.5c0.1-0.1,0.3-0.1,0.6,0l1.1,0.4c0.2,0.1,0.5,0,0.7-0.2 c1-1.6,0.9-3.6-0.2-5.2c-0.3-0.4-0.6-0.8-1.1-1.1c0.6-0.1,1.1-0.2,1.5-0.3C22.6,13.5,23.8,11.8,23.9,10z M14.1,12.8 c0.3-0.2,0.7-0.3,1.1-0.1c0.4,0.3,0.6,0.8,0.3,1.3c-0.3,0.4-0.8,0.6-1.3,0.3c-0.3-0.2-0.5-0.6-0.4-1l-1.4-0.8v1.6 c0.4,0.1,0.6,0.5,0.6,0.9c0,0.5-0.4,0.9-0.9,0.9c-0.5,0-0.9-0.4-0.9-0.9c0-0.4,0.3-0.7,0.6-0.9v-1.6l-1.4,0.8c0.1,0.4-0.1,0.8-0.4,1 c-0.4,0.3-1,0.1-1.3-0.3c-0.3-0.4-0.1-1,0.3-1.3c0.3-0.2,0.8-0.1,1.1,0.1l1.4-0.8L10,11.1c-0.3,0.2-0.7,0.3-1.1,0.1 C8.5,11,8.3,10.4,8.6,10c0.3-0.4,0.8-0.6,1.3-0.3c0.3,0.2,0.5,0.6,0.4,1l1.4,0.8V9.8c-0.4-0.1-0.6-0.5-0.6-0.9C11.1,8.4,11.5,8,12,8 c0.5,0,0.9,0.4,0.9,0.9c0,0.4-0.3,0.7-0.6,0.9v1.6l1.4-0.8c-0.1-0.4,0.1-0.8,0.4-1c0.4-0.3,1-0.1,1.3,0.3c0.3,0.4,0.1,1-0.3,1.3 c-0.3,0.2-0.8,0.1-1.1-0.1l-1.4,0.8L14.1,12.8z"></path></svg></button></div><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 3.25rem"><div style="margin-bottom:24px"><ins class="pages__Ins-sc-1bddmy0-0 cmlOBH adsbygoogle" data-ad-client="ca-pub-2667251850399676" data-ad-slot="9586629994" data-ad-format="auto" data-full-width-responsive="true"></ins></div><h1>git branching</h1><aside class="post-toc__StyledToc-sc-1fk213p-0 foZQLY"><div class="post-toc"><ul>
+<li><a href="/git/git-branching/#%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EB%B8%8C%EB%9E%9C%EC%B9%ADbranching-%EC%A0%84%EB%9E%B5">대표적인 브랜칭(branching) 전략</a></li>
+<li>
+<p><a href="/git/git-branching/#git-flow">Git-flow</a></p>
+<ul>
+<li>
+<p><a href="/git/git-branching/#%EB%A9%94%EC%9D%B8-%EB%B8%8C%EB%9E%9C%EC%B9%98main-branch">메인 브랜치(Main branch)</a></p>
+<ul>
+<li><a href="/git/git-branching/#master">master</a></li>
+<li><a href="/git/git-branching/#develop">develop</a></li>
+</ul>
+</li>
+<li>
+<p><a href="/git/git-branching/#%EB%B3%B4%EC%A1%B0-%EB%B8%8C%EB%9E%9C%EC%B9%98supporting-branch">보조 브랜치(Supporting branch)</a></p>
+<ul>
+<li><a href="/git/git-branching/#%ED%94%BC%EC%B2%98-%EB%B8%8C%EB%9E%9C%EC%B9%98feature-branch-%EB%98%90%EB%8A%94-%ED%86%A0%ED%94%BD-%EB%B8%8C%EB%9E%9C%EC%B9%98topic-branch">피처 브랜치(feature branch) 또는 토픽 브랜치(topic branch)</a></li>
+<li><a href="/git/git-branching/#%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%B8%8C%EB%9E%9C%EC%B9%98release-branch">릴리즈 브랜치(release branch)</a></li>
+<li><a href="/git/git-branching/#hotfix">hotfix</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/git/git-branching/#github-flow">Github-flow</a></p>
+<ul>
+<li><a href="/git/git-branching/#1-master-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%8A%94-%EC%96%B4%EB%96%A4-%EB%95%8C%EB%93%A0-%EB%B0%B0%ED%8F%AC%EA%B0%80-%EA%B0%80%EB%8A%A5%ED%95%B4%EC%95%BC-%ED%95%A9%EB%8B%88%EB%8B%A4">1. master 브랜치는 어떤 때든 배포가 가능해야 합니다.</a></li>
+<li><a href="/git/git-branching/#2-master%EC%97%90%EC%84%9C-%EC%83%88%EB%A1%9C%EC%9A%B4%EC%9D%BC%EC%9D%84-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%B4-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EB%A7%8C%EB%93%A0%EB%8B%A4%EB%A9%B4-%EC%9D%B4%EB%A6%84%EC%9D%84-%EB%AA%85%ED%99%95%ED%9E%88-%EC%9E%91%EC%84%B1%ED%95%A9%EB%8B%88%EB%8B%A4">2. master에서 새로운일을 시작하기 위해 브랜치를 만든다면, 이름을 명확히 작성합니다.</a></li>
+<li><a href="/git/git-branching/#3-%EC%9B%90%EA%B2%A9%EC%A7%80-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A1%9C-%EC%88%98%EC%8B%9C%EB%A1%9C-push-%ED%95%A9%EB%8B%88%EB%8B%A4">3. 원격지 브랜치로 수시로 push 합니다.</a></li>
+<li><a href="/git/git-branching/#4-%ED%94%BC%EB%93%9C%EB%B0%B1%EC%9D%B4%EB%82%98-%EB%8F%84%EC%9B%80%EC%9D%B4-%ED%95%84%EC%9A%94%ED%95%A0-%EB%95%8C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-merge-%EC%A4%80%EB%B9%84%EA%B0%80-%EC%99%84%EB%A3%8C%EB%90%98%EC%97%88%EC%9D%84-%EB%95%8C%EB%8A%94-pull-request%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%A9%EB%8B%88%EB%8B%A4">4. 피드백이나 도움이 필요할 때, 그리고 merge 준비가 완료되었을 때는 pull request를 생성합니다.</a></li>
+<li><a href="/git/git-branching/#5-%EA%B8%B0%EB%8A%A5%EC%97%90-%EB%8C%80%ED%95%9C-%EB%A6%AC%EB%B7%B0%EC%99%80-%EB%85%BC%EC%9D%98%EA%B0%80-%EB%81%9D%EB%82%9C-%ED%9B%84-master%EB%A1%9C-merge-%ED%95%A9%EB%8B%88%EB%8B%A4">5. 기능에 대한 리뷰와 논의가 끝난 후 master로 merge 합니다.</a></li>
+<li><a href="/git/git-branching/#6-master%EB%A1%9C-merge%EB%90%98%EA%B3%A0-push-%EB%90%98%EC%97%88%EC%9D%84-%EB%95%8C%EB%8A%94-%EC%A6%89%EC%8B%9C-%EB%B0%B0%ED%8F%AC%EB%90%98%EC%96%B4%EC%95%BC-%ED%95%A9%EB%8B%88%EB%8B%A4">6. master로 merge되고 push 되었을 때는, 즉시 배포되어야 합니다.</a></li>
+</ul>
+</li>
+<li>
+<p><a href="/git/git-branching/#gitlab-flow">GitLab flow</a></p>
+<ul>
+<li><a href="/git/git-branching/#production-branch-with-gitlab-flow">Production branch with GitLab flow</a></li>
+<li><a href="/git/git-branching/#environment-branches-with-gitlab-flow">Environment branches with GitLab flow</a></li>
+<li><a href="/git/git-branching/#release-branches-with-gitlab-flow">Release branches with GitLab flow</a></li>
+<li><a href="/git/git-branching/#mergepull-requests-with-gitlab-flow">Merge/pull requests with GitLab flow</a></li>
+<li><a href="/git/git-branching/#issues-with-gitlab-flow">Issues with GitLab flow</a></li>
+<li>
+<p><a href="/git/git-branching/#%EB%82%98%EC%9D%98-%EA%B9%83-%ED%94%8C%EB%A1%9C%EC%9A%B0-1">나의 깃 플로우 1</a></p>
+<ul>
+<li><a href="/git/git-branching/#%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0">사용하는 이유</a></li>
+</ul>
+</li>
+<li>
+<p><a href="/git/git-branching/#%EB%82%98%EC%9D%98-%EA%B9%83-%ED%94%8C%EB%A1%9C%EC%9A%B0-2">나의 깃 플로우 2</a></p>
+<ul>
+<li><a href="/git/git-branching/#rebase-%ED%95%98%EC%A7%80-%EC%95%8A%EC%9C%BC%EB%A9%B4-%EB%B0%B0%ED%8F%AC%EB%A5%BC-%EB%A7%89%EC%9E%90-">rebase 하지 않으면 배포를 막자 !!</a></li>
+<li><a href="/git/git-branching/#rebase-%ED%95%A0%EB%95%8C-%ED%98%84%EC%9E%AC-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EC%B5%9C%EC%8B%A0%ED%99%94-%ED%95%98%EC%9E%90-">rebase 할때 현재 브랜치를 최신화 하자 !</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/git/git-branching/#squash-and-merge%EB%A5%BC-%EC%84%A0%ED%98%B8%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0%EC%9D%B4%EC%9E%AC%EC%84%B1%EB%8B%98%EC%9D%98-%EC%9D%98%EA%B2%AC">squash and merge를 선호하는 이유(이재성님의 의견)</a></li>
+<li><a href="/git/git-branching/#%EC%B0%B8%EA%B3%A0">참고</a></li>
+</ul></div></aside><div class="post-container__StyledDiv-wcqbpn-0 cvaYCq post-content"><h2 id="대표적인-브랜칭branching-전략" style="position:relative;"><a href="#%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EB%B8%8C%EB%9E%9C%EC%B9%ADbranching-%EC%A0%84%EB%9E%B5" aria-label="대표적인 브랜칭branching 전략 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>대표적인 브랜칭(branching) 전략</h2>
+<ul>
+<li>Git-flow</li>
+<li>GitHub-flow</li>
+</ul>
+<h2 id="git-flow" style="position:relative;"><a href="#git-flow" aria-label="git flow permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git-flow</h2>
+<ul>
+<li>
+<p>Git-flow는 브랜치를 크게 4가지로 나누어 개발하는 전략입니다.</p>
+<ul>
+<li>메인 브랜치(Main branch)</li>
+<li>피처 브랜치(Feature branch) 또는 토픽 브랜치(Topic branch)</li>
+<li>릴리스 브랜치(Release branch)</li>
+<li>핫픽스 브랜치(Hotfix branch)</li>
+</ul>
+</li>
+<li>가장 중심이 되는 브랜치는 master와 develop 브랜치이며, merge된 feature, release, hotfix 브랜치는 삭제하도록합니다.</li>
+<li>Git-flow 전략은 주기적으로 배포를 해야하는 프로젝트에는 적합하지만, 브랜치가 많아 복잡하고 어떤 프로젝트에 따라서는 몇몇 브랜치가 애매한 포지션을 가질 수 있습니다.</li>
+</ul>
+<h3 id="메인-브랜치main-branch" style="position:relative;"><a href="#%EB%A9%94%EC%9D%B8-%EB%B8%8C%EB%9E%9C%EC%B9%98main-branch" aria-label="메인 브랜치main branch permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>메인 브랜치(Main branch)</h3>
+<ul>
+<li>master 브랜치와 develop 브랜치, 이 두 종류의 브랜치를 보통 메인 브랜치로 사용합니다.</li>
+<li>master 브랜치와 develop 브랜치를 병행으로 유지합니다.</li>
+</ul>
+<h4 id="master" style="position:relative;"><a href="#master" aria-label="master permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>master</h4>
+<ul>
+<li>배포 가능한 상태만을 관리하는 브랜치입니다.</li>
+<li>배포된 코드를 모아놓은 브랜치로 각 브랜치를 태그로 표시해 둡니다.</li>
+</ul>
+<h4 id="develop" style="position:relative;"><a href="#develop" aria-label="develop permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>develop</h4>
+<ul>
+<li>다음에 배포할 것을 개발하는 브랜치입니다.</li>
+<li>develop 브랜치는 통합 브랜치의 역할을 하며, 평소에는 이 브랜치를 기반으로 개발을 진행합니다.</li>
+<li>개발이 완료되면 일련의 과정을 거쳐 마스터 브랜치로 머지 됩니다.</li>
+</ul>
+<h3 id="보조-브랜치supporting-branch" style="position:relative;"><a href="#%EB%B3%B4%EC%A1%B0-%EB%B8%8C%EB%9E%9C%EC%B9%98supporting-branch" aria-label="보조 브랜치supporting branch permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>보조 브랜치(Supporting branch)</h3>
+<ul>
+<li>병렬 업무를 가능하게 합니다.</li>
+<li>필요할 때 생성, 역할을 완료하면 삭제합니다.</li>
+</ul>
+<h4 id="피처-브랜치feature-branch-또는-토픽-브랜치topic-branch" style="position:relative;"><a href="#%ED%94%BC%EC%B2%98-%EB%B8%8C%EB%9E%9C%EC%B9%98feature-branch-%EB%98%90%EB%8A%94-%ED%86%A0%ED%94%BD-%EB%B8%8C%EB%9E%9C%EC%B9%98topic-branch" aria-label="피처 브랜치feature branch 또는 토픽 브랜치topic branch permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>피처 브랜치(feature branch) 또는 토픽 브랜치(topic branch)</h4>
+<ul>
+<li>
+<p>기능을 개발하는 브랜치로, develop 브랜치로부터 분기합니다.</p>
+<ul>
+<li>갈라져 나온 브랜치 : develop</li>
+</ul>
+</li>
+<li>
+<p>feature 브랜치는 그 기능을 다 완성할 때까지 유지하고, 다 완성되면 develop 브랜치로 merge 합니다.</p>
+<ul>
+<li>다시 merge할 브랜치 : develop</li>
+</ul>
+</li>
+<li>merge 할때 merge commit을 생성하며 히스토리를 특정 기능단위로 묶습니다.</li>
+<li>feature 브랜치는 보통 개발자 저장소에만 있는 브랜치고 origin에는 push 하지 않습니다.</li>
+<li>브랜치 이름 규칙 : master, develop, release-<em>, hotfix-</em>를 제외한 것</li>
+<li>기존에 잘 작동하는 개발 코드(develop 브랜치)와 새로 변경될 개발코드(feature 브랜치)를 분리하고 각각 보존하는 것입니다.</li>
+<li>feature 브랜치는 Git-flow 전략에서 지칭하는 단위 개발 브랜치의 의미를 가집니다.</li>
+</ul>
+<h4 id="릴리즈-브랜치release-branch" style="position:relative;"><a href="#%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%B8%8C%EB%9E%9C%EC%B9%98release-branch" aria-label="릴리즈 브랜치release branch permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>릴리즈 브랜치(release branch)</h4>
+<ul>
+<li>배포를 위한 최종적인 버그 수정 등의 개발을 수행합니다. 버전명 등 메타데이터 변경 소소한 버그 수정을 합니다.</li>
+<li>tag를 이용해 버전을 명시해 줍니다.</li>
+<li>
+<p>develop 브랜치에 이번 버전에 포함되는 기능이 merge 되었다면 QA를 위해 develop 브랜치에서부터 release 브랜치를 생성합니다.</p>
+<ul>
+<li>갈라져 나온 브랜치 : develop</li>
+</ul>
+</li>
+<li>
+<p>배포 가능한 상태가 되면 master 브랜치로 병합시키고, 출시된 master 브랜치에 버전 태그를 추가합니다. release 브랜치에서 기능을 점검하며 발견한 버그 수정 사항은 develop 브랜치에도 적용해 주어야 합니다. 그러므로 배포 완료 후 develop 브랜치에 대해서도 merge 작업을 수행해야 합니다.</p>
+<ul>
+<li>다시 merge할 브랜치 : develop, master</li>
+</ul>
+</li>
+<li>브랜치 이름 규칙 : release-*</li>
+</ul>
+<h4 id="hotfix" style="position:relative;"><a href="#hotfix" aria-label="hotfix permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>hotfix</h4>
+<ul>
+<li>배포 버전의 문제를 고치는 브랜치입니다.</li>
+<li>갈라져 나온 브랜치 : master</li>
+<li>다시 merge할 브랜치 : develop, master</li>
+</ul>
+<h2 id="github-flow" style="position:relative;"><a href="#github-flow" aria-label="github flow permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Github-flow</h2>
+<ul>
+<li>Git-flow가 Github에서 사용하기에는 복잡하다고 나온 브랜칭 전략입니다.</li>
+<li>흐름이 단순한 만큼 role도 단순합니다.</li>
+<li>master 브랜치에 대한 role만 정확하다면 나머지 브랜치들에 대해서는 관여하지 않습니다. 즉, hotfix 브랜치나 feature 브랜치를 구분하지 않습니다. 다만 우선순위가 다를 뿐입니다. pull request 기능을 사용하도록 권장합니다.</li>
+<li>이 브랜칭 전략은 수시로 배포가 일어나며, CI와 배포가 자동화되어있는 프로젝트에 유용합니다.</li>
+<li>구성원 간의 정보 공유가 원할해야 합니다.</li>
+<li>pre-merge 테스트를 합니다.</li>
+<li>배포 게이트 키퍼 없습니다.</li>
+</ul>
+<h3 id="1-master-브랜치는-어떤-때든-배포가-가능해야-합니다" style="position:relative;"><a href="#1-master-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%8A%94-%EC%96%B4%EB%96%A4-%EB%95%8C%EB%93%A0-%EB%B0%B0%ED%8F%AC%EA%B0%80-%EA%B0%80%EB%8A%A5%ED%95%B4%EC%95%BC-%ED%95%A9%EB%8B%88%EB%8B%A4" aria-label="1 master 브랜치는 어떤 때든 배포가 가능해야 합니다 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. master 브랜치는 어떤 때든 배포가 가능해야 합니다.</h3>
+<ul>
+<li>master 브랜치는 항상 최신 상태며, stable 상태로 product에 배포되는 브랜치입니다.</li>
+<li>이 브랜치에 대해서는 엄격한 role과 함께 사용합니다.</li>
+<li>merge하기 전에 충분히 테스트를 해야합니다. 테스트는 로컬에서 하는 것이 아니라 브랜치를 push 하고 Jenkins로 테스트 합니다.</li>
+</ul>
+<h3 id="2-master에서-새로운일을-시작하기-위해-브랜치를-만든다면-이름을-명확히-작성합니다" style="position:relative;"><a href="#2-master%EC%97%90%EC%84%9C-%EC%83%88%EB%A1%9C%EC%9A%B4%EC%9D%BC%EC%9D%84-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%B4-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EB%A7%8C%EB%93%A0%EB%8B%A4%EB%A9%B4-%EC%9D%B4%EB%A6%84%EC%9D%84-%EB%AA%85%ED%99%95%ED%9E%88-%EC%9E%91%EC%84%B1%ED%95%A9%EB%8B%88%EB%8B%A4" aria-label="2 master에서 새로운일을 시작하기 위해 브랜치를 만든다면 이름을 명확히 작성합니다 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. master에서 새로운일을 시작하기 위해 브랜치를 만든다면, 이름을 명확히 작성합니다.</h3>
+<ul>
+<li>브랜치는 항상 master 브랜치에서 만듭니다.</li>
+<li>Git-flow와는 다르게 feature 브랜치나 develop 브랜치가 존재하지 않습니다.</li>
+<li>새로운 기능을 추가하거나, 버그를 해결하기 위한 브랜치 이름은 자세하게 어떤 일을 하고 있는지에 대해서 작성합니다.</li>
+<li>커밋메시지를 명확하게 작성합니다.</li>
+</ul>
+<h3 id="3-원격지-브랜치로-수시로-push-합니다" style="position:relative;"><a href="#3-%EC%9B%90%EA%B2%A9%EC%A7%80-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A1%9C-%EC%88%98%EC%8B%9C%EB%A1%9C-push-%ED%95%A9%EB%8B%88%EB%8B%A4" aria-label="3 원격지 브랜치로 수시로 push 합니다 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. 원격지 브랜치로 수시로 push 합니다.</h3>
+<ul>
+<li>Git-flow와 상반되는 방식입니다.</li>
+<li>항상 원격지에 자신이 하고 있는 일들을 올려 다른 사람들도 확인할 수 있도록 합니다.</li>
+<li>이는 하드웨어에 문제가 발생해 작업하던 부분이 없어지더라도, 원격지에 있는 소스를 받아서 작업할 수 있도록 합니다.</li>
+</ul>
+<h3 id="4-피드백이나-도움이-필요할-때-그리고-merge-준비가-완료되었을-때는-pull-request를-생성합니다" style="position:relative;"><a href="#4-%ED%94%BC%EB%93%9C%EB%B0%B1%EC%9D%B4%EB%82%98-%EB%8F%84%EC%9B%80%EC%9D%B4-%ED%95%84%EC%9A%94%ED%95%A0-%EB%95%8C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-merge-%EC%A4%80%EB%B9%84%EA%B0%80-%EC%99%84%EB%A3%8C%EB%90%98%EC%97%88%EC%9D%84-%EB%95%8C%EB%8A%94-pull-request%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%A9%EB%8B%88%EB%8B%A4" aria-label="4 피드백이나 도움이 필요할 때 그리고 merge 준비가 완료되었을 때는 pull request를 생성합니다 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. 피드백이나 도움이 필요할 때, 그리고 merge 준비가 완료되었을 때는 pull request를 생성합니다.</h3>
+<ul>
+<li>pull request는 코드 리뷰를 도와주는 시스템입니다. 이것을 이용해 자신의 코드를 공유하고, 리뷰 받습니다.</li>
+<li>merge 준비가 완료되었다면 master 브랜치로 merge를 요청합니다.</li>
+</ul>
+<h3 id="5-기능에-대한-리뷰와-논의가-끝난-후-master로-merge-합니다" style="position:relative;"><a href="#5-%EA%B8%B0%EB%8A%A5%EC%97%90-%EB%8C%80%ED%95%9C-%EB%A6%AC%EB%B7%B0%EC%99%80-%EB%85%BC%EC%9D%98%EA%B0%80-%EB%81%9D%EB%82%9C-%ED%9B%84-master%EB%A1%9C-merge-%ED%95%A9%EB%8B%88%EB%8B%A4" aria-label="5 기능에 대한 리뷰와 논의가 끝난 후 master로 merge 합니다 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. 기능에 대한 리뷰와 논의가 끝난 후 master로 merge 합니다.</h3>
+<ul>
+<li>곧장 product로 반영이될 기능이므로, 이해관계가 연결된 사람들과 충분한 논의 이후 반영하도록 합니다.</li>
+<li>CI빌드 통과, 배포락 체크, 마스터 브랜치 최신 커밋이 존재하는지 확인해야합니다. 이상이 없다면 마스터에 머지합니다.</li>
+</ul>
+<h3 id="6-master로-merge되고-push-되었을-때는-즉시-배포되어야-합니다" style="position:relative;"><a href="#6-master%EB%A1%9C-merge%EB%90%98%EA%B3%A0-push-%EB%90%98%EC%97%88%EC%9D%84-%EB%95%8C%EB%8A%94-%EC%A6%89%EC%8B%9C-%EB%B0%B0%ED%8F%AC%EB%90%98%EC%96%B4%EC%95%BC-%ED%95%A9%EB%8B%88%EB%8B%A4" aria-label="6 master로 merge되고 push 되었을 때는 즉시 배포되어야 합니다 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6. master로 merge되고 push 되었을 때는, 즉시 배포되어야 합니다.</h3>
+<ul>
+<li>GitHub-flow의 핵심입니다.</li>
+<li>master로 merge가 일어나면 자동으로 배포가 되도록 설정합니다.</li>
+</ul>
+<h2 id="gitlab-flow" style="position:relative;"><a href="#gitlab-flow" aria-label="gitlab flow permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GitLab flow</h2>
+<ul>
+<li>
+<p>Git flow는 너무 지나친 규칙을 가지고 있습니다.</p>
+<ul>
+<li>release, hotfix 브랜치가 너무 복잡하다. 너무 지나친 규칙을 가지고 있습니다.</li>
+</ul>
+</li>
+<li>
+<p>GitHub flow는 너무 간소화되어 있습니다.</p>
+<ul>
+<li>지속적인 배포의 모범 사례가 부족합니다.</li>
+<li>릴리즈 소프트웨어, EC와의 통합은 어떤 식으로 해야하는지 설명되어있지 않습니다.</li>
+</ul>
+</li>
+<li>GitLab flow는 master를 기본으로 환경별, 릴리즈별 브랜치를 생성합니다.</li>
+<li>
+<p>지속적인 배포가 어려울 때.</p>
+<ul>
+<li>실서비스에 나가있는 커밋들을 위한 production 브랜치가 존재합니다.</li>
+<li>master 브랜치를 production에 merge함으로써 새로운 버전을 배포할 수 있습니다.</li>
+<li>거의 정확한 배포시각이 merge커밋에 나타납니다.</li>
+<li>배포 스크립트에 tag를 생성하도록 한다면, tag가 생성된 시간 === 배포가 나간 시간이 됩니다.</li>
+</ul>
+</li>
+<li>
+<p>환경별 배포가 필요할 때.</p>
+<ul>
+<li>각 환경에서 테스트를 통과한 경우만 다른 환경으로 배포가 가능합니다.</li>
+<li>hotfix의 경우, feature 브랜치로 만들고 Pull request를 통해 master로 merge합니다. 만약 마스터가 자동 테스트를 통과했다면, feature 브랜치를 각각의 브랜치에 머지해야합니다.</li>
+</ul>
+</li>
+<li>
+<p>릴리즈 소프트웨어 일 때.</p>
+<ul>
+<li>버전 별 브랜치를 master에서 생성합니다.</li>
+<li>버그 픽스는 master에 머지하고 각 버전 브랜치에 cherry-pick 합니다. 버전 브랜치에 merge를 먼저 한다면, master로 다시 cherry-pick하는 것을 잊어버릴 수 있기 때문에 다음 버전에서 버그가 다시 출현할 수 있습니다. 이것은 linux 커널을 먼저 hotfix하고 각 배포판에 적용하는 upstream-forced와 비슷합니다.</li>
+<li>릴리즈 브랜치에는 bug-fix를 할 때마다 태그로 patch버전을 표시합니다.</li>
+<li>latest 브랜치로 최신 버전을 체크할 수 있습니다.</li>
+</ul>
+</li>
+<li>
+<p>개발이 완료되지 않았더라도 중간 결과를 팀 내 공유합니다.</p>
+<ul>
+<li>몇 시간 이상 기능 개발 중이라면 Merge/Pull request를 열어 피드백 받고 싶은 사람을 @멘션해서 피드백을 받습니다.</li>
+</ul>
+</li>
+<li>
+<p>항상 이슈 트래커 시스템에서 이슈를 생성합니다.</p>
+<ul>
+<li>개발은 항상 코드 변경에 목표를 설명하는 이슈에서 시작합니다.</li>
+<li>코드에 대한 정보를 팀 내 공유 하는데 도움이 됩니다.</li>
+<li>feature 브랜치 내에서 이것저것을 하지않게 되어 변경사항을 작게 유지하는데 도움이 된다.</li>
+</ul>
+</li>
+<li>
+<p>Commit을 자주하고 push도 자주합니다.</p>
+<ul>
+<li>commit을 작게 나누면, 나중에 코드를 봤을 때 컨텍스트 이해에 도움이 됩니다.</li>
+<li>완료되지 않았어도 Merge/Pull request를 통해 논의와 피드백을 받으면 코드 향상에 도움이 됩니다.</li>
+</ul>
+</li>
+<li>
+<p>Merge 전에 테스트합니다.</p>
+<ul>
+<li>잘못된 코드가 master에 merge되어 깨지기 전에 예방 가능합니다.</li>
+</ul>
+</li>
+<li>좀더 현실적인 상황에 대한 브랜치 대안입니다.</li>
+<li>구성원 간의 정보의 공유가 중요합니다.</li>
+<li>pre-merge 테스트를 합니다.</li>
+</ul>
+<h3 id="production-branch-with-gitlab-flow" style="position:relative;"><a href="#production-branch-with-gitlab-flow" aria-label="production branch with gitlab flow permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Production branch with GitLab flow</h3>
+<ul>
+<li>production 브런치가 존재하여 커밋한 내용들을 일방적으로 디플로이를 하는 형태입니다. GitHub에서 브런치 하나를 더 구성하여 사용하는 이것도 조금은 간단한 구성입니다.</li>
+<li>이렇게 구성하면 배포 자동화가 되어있지않은 구성에서 어떻게 배포를 진행할 것인가에 대한 내용을 담았습니다.</li>
+<li>물론 이걸로 부족하여 다음의 것도 추가되었습니다.</li>
+</ul>
+<h3 id="environment-branches-with-gitlab-flow" style="position:relative;"><a href="#environment-branches-with-gitlab-flow" aria-label="environment branches with gitlab flow permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Environment branches with GitLab flow</h3>
+<ul>
+<li>master와 production 사이에 pre-production을 두어 개발한 내용을 곧장 반영하지 않고 시간을 두고 반영을 하는 것을 말합니다. Staging을 위한 공간을 만듭니다.</li>
+</ul>
+<h3 id="release-branches-with-gitlab-flow" style="position:relative;"><a href="#release-branches-with-gitlab-flow" aria-label="release branches with gitlab flow permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Release branches with GitLab flow</h3>
+<ul>
+<li>release한 브런치를 두고서 보안상 문제가 발생한 것이나 백 포트를 위해서 작업을 할 경우, cherry-pick을 이용해서 작업을 진행할 수도 있습니다. 아니면 해당 릴리즈에서 발생하는 버그들을 묶어서 수정하는 방식으로 작업합니다. 일반적으로 말하는 ‘upstream first’ 정책입니다.</li>
+</ul>
+<h3 id="mergepull-requests-with-gitlab-flow" style="position:relative;"><a href="#mergepull-requests-with-gitlab-flow" aria-label="mergepull requests with gitlab flow permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Merge/pull requests with GitLab flow</h3>
+<ul>
+<li>Pull request를 사용하는 방법입니다.</li>
+<li>GitHub Flow에서 하는 방법과 동일합니다.</li>
+</ul>
+<h3 id="issues-with-gitlab-flow" style="position:relative;"><a href="#issues-with-gitlab-flow" aria-label="issues with gitlab flow permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Issues with GitLab flow</h3>
+<ul>
+<li>Issue 트러커와 연결하여 사용하는 것을 말합니다. 긴 시간 동안 작업을 할 경우, 이슈를 생성하여 작업을 진행합니다.</li>
+<li>브런치 이름에는 이슈번호를 적어 작업 중인 이슈가 어떤 것인지를 명확하게 해주는 것이 필요합니다.</li>
+<li>작업이 끝나거나 코드 공유가 필요한 시점이면 Merge/pull requests를 보냅니다.</li>
+</ul>
+<h3 id="나의-깃-플로우-1" style="position:relative;"><a href="#%EB%82%98%EC%9D%98-%EA%B9%83-%ED%94%8C%EB%A1%9C%EC%9A%B0-1" aria-label="나의 깃 플로우 1 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>나의 깃 플로우 1</h3>
+<ul>
+<li>master / develop / feature / deploy / hotfix</li>
+<li>master : 배포 성공 이후 deploy를 merge</li>
+<li>develop : feature들을 merge해서 beta test에 이용. master와 이격이 커질 경우 master에서 새로 만든다.</li>
+<li>feature : <code class="language-text">feature/날짜/티켓번호</code>로 생성 후 develop에 merge해서 test하고 deploy에 merge해서 배포한다.</li>
+<li>deploy : develop에서 테스트 완료 된 feature를 merge 후 배포한다. <code class="language-text">deploy/날짜</code>로 브랜치를 생성한다. 보통 배포 전날에 생성한다.</li>
+<li>hotfix : master에 merge 후 문제가 생기면 hotfix 브랜치 생성에서 배포하여 수정이 완료 되면 master에 머지한다. <code class="language-text">hotfix/날짜</code>로 브랜치를 생성한다.</li>
+<li>adhoc : 브랜치명을 만들 때 날짜가 명확하지 않을 때 날짜 부분에 대신 사용한다.</li>
+</ul>
+<h4 id="사용하는-이유" style="position:relative;"><a href="#%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0" aria-label="사용하는 이유 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>사용하는 이유</h4>
+<ul>
+<li>다양한 팀이 하나의 프로젝트에서 개발할 경우 beta 환경을 누가 사용하고 있던지 관계 없이 배포 가능하게 하기 위해 사용합니다.</li>
+</ul>
+<h3 id="나의-깃-플로우-2" style="position:relative;"><a href="#%EB%82%98%EC%9D%98-%EA%B9%83-%ED%94%8C%EB%A1%9C%EC%9A%B0-2" aria-label="나의 깃 플로우 2 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>나의 깃 플로우 2</h3>
+<ul>
+<li>master / deploy / feature</li>
+<li>master : 배포 예정이 deploy 브랜치를 merge 후 태깅하고 태깅이나 master의 마지막 커밋으로 배포한다.</li>
+<li>deploy : <code class="language-text">deploy/날짜</code>로 브랜치를 생성한다. 해당 날짜에 배포 나갈 feature들을 deploy로 pr하여 리뷰 후 merge하고 최종 테스트까지 브랜치에서 확인한다. jenkins script를 통해 merge-base가 master 최신 커밋과 같은지 확인하고 같지 않다면 배포를 못하게 한다. 이를 해결하기 위해서는 rebase해야 한다. rebase를 하면 force push가 필요하기 때문에 git hook을 이용해서 rebase 전에 브랜치를 pull 받을 수 있게 한다.</li>
+<li>feature : <code class="language-text">feature/날짜/티켓번호</code>로 생성 후 deploy에 mr을 통해 merge해서 test한다. deploy에 merge 시에 rebase merge를 한다.</li>
+<li>hotfix : master에 배포 후 문제가 생기면 hotfix 브랜치 생성에서 배포하여 수정이 완료 되면 master에 머지한다. <code class="language-text">hotfix/날짜</code>로 브랜치를 생성한다.</li>
+<li>adhoc : 브랜치명을 만들 때 날짜가 명확하지 않을 때 날짜 부분에 대신 사용한다.</li>
+</ul>
+<h4 id="rebase-하지-않으면-배포를-막자-" style="position:relative;"><a href="#rebase-%ED%95%98%EC%A7%80-%EC%95%8A%EC%9C%BC%EB%A9%B4-%EB%B0%B0%ED%8F%AC%EB%A5%BC-%EB%A7%89%EC%9E%90-" aria-label="rebase 하지 않으면 배포를 막자  permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rebase 하지 않으면 배포를 막자 !!</h4>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token assign-left variable">master</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> rev-parse remotes/origin/master<span class="token variable">)</span></span>
+<span class="token assign-left variable">target</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> merge-base remotes/origin/master remotes/origin/$<span class="token punctuation">{</span>BRANCH_NAME<span class="token punctuation">}</span><span class="token variable">)</span></span>
+
+<span class="token builtin class-name">echo</span> <span class="token variable">${master}</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${target}</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">${master}</span>"</span> <span class="token operator">!=</span> <span class="token string">"<span class="token variable">${target}</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+   <span class="token builtin class-name">echo</span> <span class="token string">"master commit &amp; <span class="token variable">${BRANCH_NAME}</span> common ancestor commit is not same"</span>
+   <span class="token builtin class-name">echo</span> <span class="token string">"리베이스가 되지 않아 실패하였습니다"</span>
+   <span class="token builtin class-name">exit</span> -1
+<span class="token keyword">fi</span></code></pre></div>
+<h4 id="rebase-할때-현재-브랜치를-최신화-하자-" style="position:relative;"><a href="#rebase-%ED%95%A0%EB%95%8C-%ED%98%84%EC%9E%AC-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EC%B5%9C%EC%8B%A0%ED%99%94-%ED%95%98%EC%9E%90-" aria-label="rebase 할때 현재 브랜치를 최신화 하자  permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rebase 할때 현재 브랜치를 최신화 하자 !</h4>
+<ul>
+<li>husky 라이브러리의 pre-rebase를 사용합니다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token assign-left variable">branch</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> branch --show-current<span class="token variable">)</span></span> <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> pull https://git.baemin.in/ceo-frontend/ceo-moon-front.git <span class="token variable">${branch}</span></code></pre></div>
+<ul>
+<li>브랜치가 충돌이 난 경우 <code class="language-text">git rebase --continue</code> 명령어에도 husky가 작동되어 불편함이 있습니다. 이는
+husky v5에서 <code class="language-text">HUSKY=0</code> 옵션을 통해 husky를 생략할 수 있습니다.</li>
+</ul>
+<h2 id="squash-and-merge를-선호하는-이유이재성님의-의견" style="position:relative;"><a href="#squash-and-merge%EB%A5%BC-%EC%84%A0%ED%98%B8%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0%EC%9D%B4%EC%9E%AC%EC%84%B1%EB%8B%98%EC%9D%98-%EC%9D%98%EA%B2%AC" aria-label="squash and merge를 선호하는 이유이재성님의 의견 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>squash and merge를 선호하는 이유(<a href="https://github.com/JeaSungLEE">이재성</a>님의 의견)</h2>
+<ul>
+<li>기본 머지는 장점은 각각의 브랜치들의 작업이 한눈에 보인다는 장점이 있습니다. 다만 단점은 머지 커밋이 생기게 됩니다. 그리고 시간별로 정렬이 되다보니, 머지가 직전에 되었다고 하더라도, 커밋이 예전에 했다면 커밋은 아래쪽에 위치해 있게 됩니다. 이러한 단점들을 해결하기 위해서 리베이스를 이용할 수 있습니다.</li>
+<li>리베이스를 하게 된다면 머지 커밋이 사라지게 됩니다. 커밋의 시간과 상관없이 리베이스 하는 순간으로 각 브랜치의 커밋들이 모이게 됩니다. 다만, 한 그래프에 위치하다보니 각각의 브랜치에서 어떤 작업을 했는지 알기가 어렵습니다. 이 문제를 해결하기 위해서 squash로 각각의 브랜치들의 작업을 하나로 묶어줄 수 있습니다. 이렇게 되면 각 스펙, 기능, 이슈별로 하나의 커밋으로 보이기에 깔끔하게 보인다는 장점이 있습니다.</li>
+<li>
+<p>Q. 커밋이 합쳐지면 세부내용을 볼 수 없습니다.</p>
+<ul>
+<li>A. 세부내용은 pr때 확인했을 것입니다. 그래프로 볼 때는 세부내용을 확인 할 일이 없습니다. 그렇기에 오히려 큰 작업 내용만 보여주는 것이 훑어보기에 더 좋다고 생각합니다.</li>
+</ul>
+</li>
+<li>
+<p>Q. 그럼 커밋 한개가 잘못되어서 리버트 해야할 경우가 있습니다.</p>
+<ul>
+<li>A. 그럴 경우는 있으면 안되겠지만 만약 발생했다면 pr로 남긴 기록이 있기 때문에 해당 커밋에 대한 해쉬값은 로그에 남아 있습니다. 그것만 리버트를 하면 됩니다.</li>
+</ul>
+</li>
+<li>
+<p>Q. 스쿼시로 합쳐지니 명확하지 않은 느낌입니다.</p>
+<ul>
+<li>A. 너무 큰 스펙으로 pr을 한게 아닌가 생각이 듭니다. 스펙이 크면 코드리뷰를 하기도 어렵고, 기능별로 코드도 분리하기 위해서 쪼개서 pr을 하는것이 더 좋다고 생각합니다.</li>
+</ul>
+</li>
+<li>예를 들어 커밋이 메인화면에 이미지 추가, 메인화면에 api콜 로직 추가, 메인화면에 디자인 입히기… 이런식으로 했다고 하면 이 내용들을 이후 깃 브랜치 히스토리에서 다 볼 필요는 없다고 생각합니다. 그냥 메인화면 작업 이렇게 보이는게 훨씬 더 보기 편하고 깔끔하게 보인다고 생각합니다. 그래도 굳이 나눠서 보고싶다면 pr에 가서 확인하면 됩니다. 근데 나눠서 확인하려는 경우가 일반적으로 너무 드문 일이라 생각을 해서 스쿼시를 선호합니다.</li>
+</ul>
+<hr>
+<h2 id="참고" style="position:relative;"><a href="#%EC%B0%B8%EA%B3%A0" aria-label="참고 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참고</h2>
+<ul>
+<li><a href="https://hellowoori.tistory.com/56">Git 브랜칭 전략 : Git-flow와 Github-flow</a></li>
+<li><a href="https://mindock.github.io/conference/NHN-FORWARD/">2019.11.27 NHN FORWARD ‘깃’깔나는 Git 워크플로 알아보기</a></li>
+<li><a href="https://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/">Git flow, GitHub flow, GitLab flow</a></li>
+</ul></div><div class="social-share" style="margin-top:32px"><div class="addthis_inline_share_toolbox_7fpx"></div></div><div class="sponsor-button"><a class="bmc-button" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/yuniq"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"/><span>Buy me a coffee</span></a></div><ins class="kakao_ad_area" style="display:none" data-ad-unit="DAN-tzy6JQMnGdkMHytZ" data-ad-width="320" data-ad-height="50"></ins><hr class="custom-hr"/><div class="bio"><div class="author"><div class="author-description"><div class="author-image gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:72px;height:72px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEz0lEQVQ4ywHEBDv7AHJ9goOTnbC+y8TU49vy/7nM2aCaofLu9OTi6OHf4+zj4pORmiMvSUFOaENPbFVkhpCfuPv9//b3/Pf3/QCDk5aPmqaXpbSktsa+0uG1xdOemqHt6e7l5Ori4OPr4+Odmp4nMEpATWhDTGlUYoOGlbH4+f73+P34+P4As8HLy9rn0+Pvzd3qv9Hfp7fDlZKZ6+bt5ubs4uDl6uXkpaGmKDBLQk1pQkxqVmKEgo+r9fb8+fn+9/j+AKq2wbfI1sjY5cbW47LM37TQ4ZKTmujj6+np8OPi5unl5a+qryowS0NNaUNKaVpjhYmQqvXz+fv6//n4/gCXqLGUq7movtCkvtCPsMicvNSOkp7m4ejq6vPl4+jr5ee5sbYvM01FT2tESmhaY4SQkqv28vf7+v/5+P4Ah5OeiJilkKO0mKq7kKe6lrLKjJSi39rg7e335uXq6ubnwbq9MzhQRE1pREtnWWOBjJCo8e70/Pv/+fj+AKGvuaa3v6CxvJ2vu5SptJGot4OMmdbS1/Hy++jn7Orn6crFxjg9U0VNakNLZlRceYaLpOvo7v38//n4/gCouMCvwcqmvsauw8uatL2tytWUo6zY0df19f/p6e/q6OvQzc86P1dDTGhESmdMVHN7g5/i4Ob+/f/49/0Ap7rArL7EobnAo7jBn7bBnrbBUGBxjY+c9PT96+rx6ujs2NXXOkFXO0djQkpmSU5sbniX1dXf//7/+Pf9AJqvsJesr5uvuIqgrpawvm97hhsWImNhcObm7+/v9erq7d/d4DxCVzdDXz5HY0NHZGJtjcfJ1v/9//f2/ACImJOLoJx/lJVqfoKQpbCxvci0lY/ewMDs6/Xv8Pjr6u7i4eVDR1s2Ql45RF44P1pVYoG9vcn////7+f0AjqWWlbCim6yld4d0m62q2Or0zLu12ry259/n7evy7Ont6ebsQ0daKDdUMT1YLjVPRlR1m5+q9PDo7OjnAHqYiIyllo6ckYGHe6yxr+Tb293Oyefd3uDb493S09HGxczAv7CkqGRndi45UyUsRjpHZmdygsHAuc3IwAB9kXyrrKbe2d7V1Njd0dLo3Nvk2tns6O7g3ubVycnDtrLFsav22dPNuLFGS10bIjsjLUp2fHv//8b89b8AxKudxK2i0r+32cnE1svJ5NjY59/g3dbb6+ju5t3cyL+/nZqgmJKesZ+fTVFkIixGKjBJTVZl8e7J//i/AJySkMasnsGroL2mmc25r9rNy+HZ3ujg5MDEz2l0iDlNaB0vTCQ+YIyPm0tSZSQwTjA7VzxLabrE0dzb0ABsc37Bp5nCqp/Cq6DEq5/Zy8jz6ux5fpAfLkkcLUkfLEYkMkwvRmdqfJScn6l2fZCBiZu4wtPM2+3G1eoAQllxkoJ9yKuev6qdvaeb4tLKqqarCxYvFiRBHCZAEhQnJTNNRF9+UGyNwcPM5Nzd4dvf4d3h4+Hm5OXsAElieFlcZL6fkLmfk7ujlsq0p8G7v5iVoExSZhQXJRkXIRYfNDA/W0Bae3mFmdfCus6+u9PGxtnOzdvPzwBlcoNQW2idhXeukoG0moy6oZLq3tz79Pje2d7AvsG+tbRYVV4dKENDWHc/U3PDs6zjwqrZvqzbwLHbxLu3bQt46l0SSAAAAABJRU5ErkJggg==" alt="yuni-q" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/f6deb50fcc5a91ee8d9c7361637c1c61/e5b88/profile.png 1x,
+/static/f6deb50fcc5a91ee8d9c7361637c1c61/e7bd6/profile.png 1.5x,
+/static/f6deb50fcc5a91ee8d9c7361637c1c61/a12fc/profile.png 2x" /><img loading="lazy" width="72" height="72" srcset="/static/f6deb50fcc5a91ee8d9c7361637c1c61/e5b88/profile.png 1x,
+/static/f6deb50fcc5a91ee8d9c7361637c1c61/e7bd6/profile.png 1.5x,
+/static/f6deb50fcc5a91ee8d9c7361637c1c61/a12fc/profile.png 2x" src="/static/f6deb50fcc5a91ee8d9c7361637c1c61/e5b88/profile.png" alt="yuni-q" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div class="author-name"><span class="author-name-prefix">Written by</span><a class="author-name-content" href="/about"><span>@<!-- -->yuni-q</span></a><div class="author-introduction">yuni-q&#x27;s graffiti.</div><p class="author-socials"><a href="https://github.com/Yuni-Q">GitHub</a></p></div></div></div></div><ul class="navigator"><li><a rel="prev" href="/design/svg/">← <!-- -->svg</a></li><li><a rel="next" href="/javascript/lambda/">lambda<!-- --> →</a></li></ul><div class="utterences"></div><footer class="footer">©<a href="https://github.com/Yuni-Q">yuni-q</a>, Built with<!-- --> <a href="https://github.com/JaeYeopHan/gatsby-starter-bee">Gatsby-starter-bee</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-158583997-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/git/git-branching/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-5e219e8ed4ce1ff95bd6.js"],"app":["/app-696553e1f2cd9b793b78.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-5057a3ae15195e3af85c.js"],"component---src-pages-2048-tsx":["/component---src-pages-2048-tsx-c71afad077d9a6ec4025.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-da9e6ac7c6fb095c1a24.js"],"component---src-pages-about-tsx":["/component---src-pages-about-tsx-d526c24e67adceaa8d74.js"],"component---src-pages-apple-tsx":["/component---src-pages-apple-tsx-87955fe085622dc8eaca.js"],"component---src-pages-calculator-tsx":["/component---src-pages-calculator-tsx-2ff01d49d4bbcc24bca1.js"],"component---src-pages-candy-crush-walk-through-tsx":["/component---src-pages-candy-crush-walk-through-tsx-64c247f90467133c3289.js"],"component---src-pages-concentration-tsx":["/component---src-pages-concentration-tsx-ec15d258b3462c25e51e.js"],"component---src-pages-draggable-tsx":["/component---src-pages-draggable-tsx-25a7ce8d831ad453460b.js"],"component---src-pages-gugudan-tsx":["/component---src-pages-gugudan-tsx-249a786d87cf3ed635ce.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-8ff7bbe43db1d1a77265.js"],"component---src-pages-jas-stone-tsx":["/component---src-pages-jas-stone-tsx-a29c02e5a5dc39f58b27.js"],"component---src-pages-ladder-tsx":["/component---src-pages-ladder-tsx-3127933fc71bf8836931.js"],"component---src-pages-land-tsx":["/component---src-pages-land-tsx-12c052c1947f9819ffda.js"],"component---src-pages-lotto-tsx":["/component---src-pages-lotto-tsx-4d7761c56308e31913c7.js"],"component---src-pages-memo-tsx":["/component---src-pages-memo-tsx-7d6cc57eb15d338f179c.js"],"component---src-pages-mine-search-tsx":["/component---src-pages-mine-search-tsx-20692acec4ad52cf446d.js"],"component---src-pages-number-baseball-tsx":["/component---src-pages-number-baseball-tsx-8b938cfb50641cfd88c6.js"],"component---src-pages-pac-man-tsx":["/component---src-pages-pac-man-tsx-802ab64a1db10c6f7484.js"],"component---src-pages-particle-system-tsx":["/component---src-pages-particle-system-tsx-dda4b85c48fee480f63b.js"],"component---src-pages-response-check-tsx":["/component---src-pages-response-check-tsx-8459e1ab1653f39d86f2.js"],"component---src-pages-rsp-tsx":["/component---src-pages-rsp-tsx-37ad6f2dc018a66382b9.js"],"component---src-pages-scroll-tsx":["/component---src-pages-scroll-tsx-6a2abcb07cbe8bdfeda5.js"],"component---src-pages-space-invaders-tsx":["/component---src-pages-space-invaders-tsx-79cdfaf3e409f1a34421.js"],"component---src-pages-tetris-tsx":["/component---src-pages-tetris-tsx-8bb1c24b69782fde3c80.js"],"component---src-pages-text-rpg-tsx":["/component---src-pages-text-rpg-tsx-dae9cbf31c868bdd4fd5.js"],"component---src-pages-tictactoe-tsx":["/component---src-pages-tictactoe-tsx-74ef720164d771c42959.js"],"component---src-pages-whack-a-mole-tsx":["/component---src-pages-whack-a-mole-tsx-8257ca5e726664262668.js"],"component---src-pages-wheel-tsx":["/component---src-pages-wheel-tsx-aa20ea9db5c047924b0b.js"],"component---src-pages-word-relay-tsx":["/component---src-pages-word-relay-tsx-c192c0d147d776906fc4.js"],"component---src-templates-blog-post-tsx":["/component---src-templates-blog-post-tsx-d5c0cfa48cf2bc979892.js"],"component---src-templates-tags-tsx":["/component---src-templates-tags-tsx-2e5b95da70f35a1c6c5c.js"]};/*]]>*/</script><script src="/polyfill-5e219e8ed4ce1ff95bd6.js" nomodule=""></script><script src="/component---src-templates-blog-post-tsx-d5c0cfa48cf2bc979892.js" async=""></script><script src="/component---src-pages-index-tsx-8ff7bbe43db1d1a77265.js" async=""></script><script src="/5f65b4addbe4a8751c14ceb3e63a9207163060e3-fa999b9a9d69fad97db1.js" async=""></script><script src="/8bc2a9ce1123562e8ddbd872445825f2451419c2-79c7aca30f4910a1e880.js" async=""></script><script src="/ea019b99e59b420919ecbbd1b1aa2adb53041293-e2a6c47bd9c452bd6107.js" async=""></script><script src="/34adb1478420fd66b3d91d1c84a564b01a7c862d-e5ccf43708c1863e0198.js" async=""></script><script src="/styles-e9d24b1846c7d6eb9685.js" async=""></script><script src="/app-696553e1f2cd9b793b78.js" async=""></script><script src="/6008db0b-1dc1a1d7d394f384ef9a.js" async=""></script><script src="/d91e9ae9-66426ac7bb836cc74da0.js" async=""></script><script src="/ff239f9d-3a8f4051140e5e25b2e9.js" async=""></script><script src="/framework-c34ea17250b9b4aae64e.js" async=""></script><script src="/webpack-runtime-3794f618d5302340783a.js" async=""></script></body></html>
