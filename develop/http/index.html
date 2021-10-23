@@ -142,6 +142,7 @@ data-styled.g71[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"foZQLY,"}/*!sc*/
 <li>http/1.0의 경우 일반적으로 하나의 connection에 하나의 요청을 처리 합니다. 이렇다 보니 매 요청별로 connection을 만들게 되고 TCP상에서 동작하는 HTTP의 특성상 3-way Handshake가 반복적으로 일어나고 또한 불필요한 RTT(Round Trip Time)증가와 네트워크 지연을 초래하여 성능을 저하 시키게 됩니다.</li>
 </ul>
 </li>
+<li>Keep-Alive가 도입되었지만 표준이 아니라서 프록시 벤더사 마다 지원하기도 안하기도 했습니다.</li>
 </ul>
 <h2 id="http11" style="position:relative;"><a href="#http11" aria-label="http11 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTTP/1.1</h2>
 <p><span
@@ -166,7 +167,7 @@ data-styled.g71[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"foZQLY,"}/*!sc*/
       />
     </span></p>
 <ul>
-<li>HTTP/1.1에서 지속 커넥션을 도입하여 요청을 열어 두는 것이 가능해졌습니다. 하지만 다음 요청을 보내기 위해서 이전 요청이 도착해야합니다.</li>
+<li>HTTP/1.1에서 Keep-Alive가 아닌 지속 커넥션을 도입하여 요청을 열어 두는 것이 가능해졌습니다. 하지만 다음 요청을 보내기 위해서 이전 요청이 도착해야합니다.</li>
 <li>파이프라인 기법을 도입해 큐를 활용해 순차적으로 처리합니다. 하지만 처음 요청이 문제가 발생하면 병목 현상(Head Of Line Blocking)이 발생합니다.</li>
 <li>무거운 Header 구조(특히 Cookie) 문제가 있습니다. 어쩔땐 요청을 통해서 전송하려는 값보다 헤더 값이 더 큰경우도 비일비재 합니다.</li>
 </ul>
@@ -239,6 +240,7 @@ data-styled.g71[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"foZQLY,"}/*!sc*/
 <li>TLS를 기본 적용하고 있습니다.</li>
 <li>IP Spoofing / Replay Attack 방지를 통해 보안성을 향상 시킵니다.</li>
 <li>독립 스트림을 통해 향상된 멀티플렉싱을 지원합니다.</li>
+<li>어플리케이션 계층에 신뢰성을 구현합니다.</li>
 </ul>
 <h2 id="http3" style="position:relative;"><a href="#http3" aria-label="http3 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTTP/3</h2>
 <ul>
