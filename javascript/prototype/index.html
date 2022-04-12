@@ -160,7 +160,7 @@ data-styled.g72[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"foZQLY,"}/*!sc*/
 <li>
 <p>[[Prototype]] 프로퍼티는 __proto__ 프로퍼티로 구현되어 있어 __proto__과 [[Prototype]]은 같은 개념 입니다.</p>
 <ul>
-<li>__proto__ 속성은 표준 스펙이 아니기 때문에 개발시 사용하지 않도록 하며, ECMAScript 2015 를 사용 가능한 환경에서는 Object.getPrototypeOf 로 prototype object를 참조할 수 있습니다.</li>
+<li>__proto__ 속성은 표준 스펙이 아니기 때문에 개발 시 사용하지 않도록 하며, ECMAScript 2015를 사용 가능한 환경에서는 Object.getPrototypeOf 로 prototype object를 참조할 수 있습니다.</li>
 </ul>
 </li>
 <li>함수도 객체이므로 [[Prototype]] 프로퍼티를 가집니다. 그런데 함수 객체는 일반 객체와는 달리 prototype 프로퍼티도 소유하게 됩니다.</li>
@@ -176,7 +176,7 @@ prototype 프로퍼티와 [[Prototype]] 프로퍼티는 모두 프로토타입 �
 </ul>
 <h3 id="prototype-프로퍼티-1" style="position:relative;"><a href="#prototype-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-1" aria-label="prototype 프로퍼티 1 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>prototype 프로퍼티</h3>
 <ul>
-<li>prototype object 는 자바스크립트에서 함수 선언시 생성되는 객체로 constructor 와 __proto__ 를 기본 속성으로 가지는, 모든 함수가 가지고 있는 객체입니다. 기본 속성은 아래와 같은 속성값을 가집니다.</li>
+<li>prototype object는 자바스크립트에서 함수 선언시 생성되는 객체로 constructor 와 __proto__ 를 기본 속성으로 가지는, 모든 함수가 가지고 있는 객체입니다. 기본 속성은 아래와 같은 속성값을 가집니다.</li>
 </ul>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
   constructor<span class="token operator">:</span> <span class="token function">ƒ</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// 생성자 함수 즉, `prototype object` 가 속한 함수를 참조합니다.</span>
@@ -450,7 +450,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <ul>
 <li>자바스크립트는 prototype 기반 언어로 객체의 뼈대가 될 class가 없는 언어입니다. 대신 앞에서 살펴본 prototype을 가지며 이것을 사용해 class를 사용한 것 처럼 객체를 생성할 수 있습니다. 정확히 말하면 prototype을 가지는 생성자 함수를 사용하여 class를 사용한 것 처럼 객체를 생성할 수 있습니다. 즉, prototype 은 효율적으로 객체를 생성할 필요가 있을 때 사용하게 됩니다.</li>
 <li>prototype을 활용하지 않은 생성자 함수의 인스턴스 생성자 함수의 모든 멤버를 받기 때문에 굳이 필요치 않은 부분까지 메모리에 올라가 인스턴스를 많이 만들수록 부담이 됩니다.</li>
-<li>prototype 을 활용한 생성자 함수의 인스턴스 prototype object에 선언된 멤버들은 매 인스턴스 마다 메모리에 올라가지 않고 동일한 참조값을 가집니다. ( 원시타입의 경우 인스턴스 멤버, prototype 멤버 여부와 관계 없이 메모리에 올라갑니다.)</li>
+<li>prototype 을 활용한 생성자 함수의 인스턴스 prototype object에 선언된 멤버들은 매 인스턴스 마다 메모리에 올라가지 않고 동일한 참조값을 가집니다(원시타입의 경우 인스턴스 멤버, prototype 멤버 여부와 관계 없이 메모리에 올라갑니다).</li>
 <li>prototype 멤버의 내용을 동적으로 변경하면 변경 이전에 생성된 객체라도 적용이 됩니다.</li>
 <li>인스턴스에서는 prototype의 내용을 읽을 수는 있지만 쓸수는 없습니다.</li>
 <li>prototype 체인의 마지막은 항상 Object.prototype 입니다.</li>
