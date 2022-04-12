@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://yuni-q.github.io/오브젝트/00-intro/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/객체지향의 사실과 오해/부록a-추상화-기법/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/가상 면접 사례로 배우는 대규모 시스템 설계 기초/가상-면접-사례로-배우는-대규모-시스템-설계-기초/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/typescript/타입스크립트-모델링/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -102,6 +103,8 @@
 <url> <loc>https://yuni-q.github.io/react/리액트에서-key를-사용하는-이유/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/frontend/v8-엔진의-동작-원리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/frontend/라이브러리-없이-애니메이션-구현하는-방법/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/tags/OOP/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yuni-q.github.io/tags/객체지향/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/tags/javascript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/tags/design pattern/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yuni-q.github.io/tags/node/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
