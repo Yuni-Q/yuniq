@@ -276,39 +276,39 @@ data-styled.g72[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"fiiWKJ,"}/*!sc*/
 <hr>
 <h2 id="일반-팩토리" style="position:relative;"><a href="#%EC%9D%BC%EB%B0%98-%ED%8C%A9%ED%86%A0%EB%A6%AC" aria-label="일반 팩토리 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>일반 팩토리</h2>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">class</span> <span class="token class-name">Factory</span> <span class="token punctuation">{</span>
-	<span class="token function">orderPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
-		<span class="token keyword">const</span> pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Pizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		Pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		Pizza<span class="token punctuation">.</span><span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		Pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		Pizza<span class="token punctuation">.</span><span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token function">orderPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Pizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Pizza<span class="token punctuation">.</span><span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Pizza<span class="token punctuation">.</span><span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">// 여러 종류 피자를 만들기 위한 수정</span>
 <span class="token keyword">class</span> <span class="token class-name">Factory</span> <span class="token punctuation">{</span>
-	<span class="token function">orderPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
-		<span class="token comment">// 피자 종류가 바뀔 때 마다 코드를 고쳐야합니다.</span>
-		<span class="token keyword">let</span> pizza<span class="token punctuation">;</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">CheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'pepperoni'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PepperoniPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'clam'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ClamPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
+  <span class="token function">orderPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
+    <span class="token comment">// 피자 종류가 바뀔 때 마다 코드를 고쳐야합니다.</span>
+    <span class="token keyword">let</span> pizza<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">CheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'pepperoni'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PepperoniPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'clam'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ClamPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-		<span class="token comment">// 피자 종류에 상관없이 바뀌지 않는 부분.</span>
-		Pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		Pizza<span class="token punctuation">.</span><span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		Pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		Pizza<span class="token punctuation">.</span><span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 피자 종류에 상관없이 바뀌지 않는 부분.</span>
+    Pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Pizza<span class="token punctuation">.</span><span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Pizza<span class="token punctuation">.</span><span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-		<span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+    <span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <hr>
 <h2 id="정적-팩토리static-factory" style="position:relative;"><a href="#%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%ACstatic-factory" aria-label="정적 팩토리static factory permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>정적 팩토리(static factory)</h2>
@@ -343,27 +343,27 @@ data-styled.g72[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"fiiWKJ,"}/*!sc*/
 <hr>
 <h2 id="정적-팩토리-코드" style="position:relative;"><a href="#%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EC%BD%94%EB%93%9C" aria-label="정적 팩토리 코드 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>정적 팩토리 코드</h2>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">class</span> <span class="token class-name">Factory</span> <span class="token punctuation">{</span>
-	<span class="token keyword">static</span> <span class="token function">orderPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
-		<span class="token comment">// 피자 종류가 바뀔 때 마다 코드를 고쳐야합니다.</span>
-		<span class="token keyword">let</span> pizza<span class="token punctuation">;</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">CheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'pepperoni'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PepperoniPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'clam'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ClamPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
+  <span class="token keyword">static</span> <span class="token function">orderPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
+    <span class="token comment">// 피자 종류가 바뀔 때 마다 코드를 고쳐야합니다.</span>
+    <span class="token keyword">let</span> pizza<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">CheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'pepperoni'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PepperoniPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'clam'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ClamPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-		<span class="token comment">// 피자 종류에 상관없이 바뀌지 않는 부분.</span>
-		pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 피자 종류에 상관없이 바뀌지 않는 부분.</span>
+    pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-		<span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+    <span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <hr>
 <h3 id="핵심-정리" style="position:relative;"><a href="#%ED%95%B5%EC%8B%AC-%EC%A0%95%EB%A6%AC" aria-label="핵심 정리 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>핵심 정리</h3>
@@ -379,72 +379,72 @@ data-styled.g72[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"fiiWKJ,"}/*!sc*/
 <hr>
 <h2 id="간단한-팩토리-예제" style="position:relative;"><a href="#%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EC%98%88%EC%A0%9C" aria-label="간단한 팩토리 예제 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>간단한 팩토리 예제</h2>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">class</span> <span class="token class-name">PizzaFactory</span> <span class="token punctuation">{</span>
-	<span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">CheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'pepper'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">PepperoniPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'clam'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ClamPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">VeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'올바른 타입이 아닙니다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">CheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'pepper'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">PepperoniPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'clam'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ClamPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">VeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'올바른 타입이 아닙니다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">class</span> <span class="token class-name">PizzaStore</span> <span class="token punctuation">{</span>
-	<span class="token keyword">public</span> <span class="token function">orderPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
-		<span class="token keyword">const</span> pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PizzaFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">createPizz</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token function">orderPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PizzaFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">createPizz</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 
-	<span class="token keyword">abstract</span> <span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza<span class="token punctuation">;</span>
+  <span class="token keyword">abstract</span> <span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Pizza</span> <span class="token punctuation">{</span>
-	name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
-	dough<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
-	sauce<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
-	toppings<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  dough<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  sauce<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  toppings<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 
-	<span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Preparing '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Tossing dough... '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Adding sauce... '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Adding toppings: '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>toppings<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>topping <span class="token operator">=></span> <span class="token punctuation">{</span>
-			<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>topping<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Bake for 25 minutes at 350'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Cutting the pizza into diagonal slice'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Place pizza in official PizzaStore box'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token keyword">public</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
-		<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Preparing '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Tossing dough... '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Adding sauce... '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Adding toppings: '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>toppings<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>topping<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>topping<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Bake for 25 minutes at 350'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Cutting the pizza into diagonal slice'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Place pizza in official PizzaStore box'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">class</span> <span class="token class-name">NYStyleCheesePizza</span> <span class="token keyword">extends</span> <span class="token class-name">Pizza</span> <span class="token punctuation">{</span>
-	<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'NY Style Sauce and Cheese Pizza'</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>dough <span class="token operator">=</span> <span class="token string">'Thin Crust Dough'</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>sauce <span class="token operator">=</span> <span class="token string">'Marinara Sauce'</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>toppings<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'Grated Regains Cheese'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'NY Style Sauce and Cheese Pizza'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>dough <span class="token operator">=</span> <span class="token string">'Thin Crust Dough'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>sauce <span class="token operator">=</span> <span class="token string">'Marinara Sauce'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>toppings<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'Grated Regains Cheese'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <hr>
 <h2 id="간단한-팩토리와-팩토리-메소드-패턴의-차이점" style="position:relative;"><a href="#%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%99%80-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%86%8C%EB%93%9C-%ED%8C%A8%ED%84%B4%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" aria-label="간단한 팩토리와 팩토리 메소드 패턴의 차이점 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>간단한 팩토리와 팩토리 메소드 패턴의 차이점</h2>
@@ -581,105 +581,105 @@ data-styled.g72[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"fiiWKJ,"}/*!sc*/
 <hr>
 <h3 id="creator" style="position:relative;"><a href="#creator" aria-label="creator permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creator</h3>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">class</span> <span class="token class-name">PizzaStore</span> <span class="token punctuation">{</span>
-	<span class="token keyword">public</span> <span class="token function">orderPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
-		<span class="token keyword">const</span> pizza <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">createPizz</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		pizza<span class="token punctuation">.</span><span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token function">orderPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> pizza <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">createPizz</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pizza<span class="token punctuation">.</span><span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 
-	<span class="token keyword">abstract</span> <span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza<span class="token punctuation">;</span>
+  <span class="token keyword">abstract</span> <span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
 <hr>
 <h3 id="concrete-creator" style="position:relative;"><a href="#concrete-creator" aria-label="concrete creator permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Concrete Creator</h3>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">class</span> <span class="token class-name">NYPizzaStore</span> <span class="token keyword">extends</span> <span class="token class-name">PizzaStore</span> <span class="token punctuation">{</span>
-	<span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NYStyleCheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'pepper'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NYStylePepperoniPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'clam'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NYStyleClamPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NYStyleVeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'올바른 타입이 아닙니다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NYStyleCheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'pepper'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NYStylePepperoniPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'clam'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NYStyleClamPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NYStyleVeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'올바른 타입이 아닙니다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">class</span> <span class="token class-name">ChicagoPizzaStore</span> <span class="token keyword">extends</span> <span class="token class-name">PizzaStore</span> <span class="token punctuation">{</span>
-	<span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ChicagoStyleCheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'pepper'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ChicagoStylePepperoniPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'clam'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ChicagoStyleClamPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ChicagoStyleVeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'올바른 타입이 아닙니다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ChicagoStyleCheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'pepper'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ChicagoStylePepperoniPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'clam'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ChicagoStyleClamPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ChicagoStyleVeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'올바른 타입이 아닙니다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <hr>
 <h3 id="product" style="position:relative;"><a href="#product" aria-label="product permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Product</h3>
 <div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Pizza</span> <span class="token punctuation">{</span>
-	name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
-	dough<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
-	sauce<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
-	toppings<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  dough<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  sauce<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  toppings<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 
-	<span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Preparing '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Tossing dough... '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Adding sauce... '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Adding toppings: '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>toppings<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>topping <span class="token operator">=></span> <span class="token punctuation">{</span>
-			<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>topping<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Bake for 25 minutes at 350'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Cutting the pizza into diagonal slice'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Place pizza in official PizzaStore box'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token keyword">public</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
-		<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Preparing '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Tossing dough... '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Adding sauce... '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Adding toppings: '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>toppings<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>topping<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>topping<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">bake</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Bake for 25 minutes at 350'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Cutting the pizza into diagonal slice'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Place pizza in official PizzaStore box'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <hr>
 <h3 id="concrete-product" style="position:relative;"><a href="#concrete-product" aria-label="concrete product permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Concrete Product</h3>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">class</span> <span class="token class-name">NYStyleCheesePizza</span> <span class="token keyword">extends</span> <span class="token class-name">Pizza</span> <span class="token punctuation">{</span>
-	<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'NY Style Sauce and Cheese Pizza'</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>dough <span class="token operator">=</span> <span class="token string">'Thin Crust Dough'</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>sauce <span class="token operator">=</span> <span class="token string">'Marinara Sauce'</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>toppings<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'Grated Regains Cheese'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'NY Style Sauce and Cheese Pizza'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>dough <span class="token operator">=</span> <span class="token string">'Thin Crust Dough'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>sauce <span class="token operator">=</span> <span class="token string">'Marinara Sauce'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>toppings<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'Grated Regains Cheese'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">class</span> <span class="token class-name">ChicagoStyleCheesePizza</span> <span class="token keyword">extends</span> <span class="token class-name">Pizza</span> <span class="token punctuation">{</span>
-	<span class="token function">ChicagoStyleCheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Chicago Style Deep Dish Cheese Pizza'</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>dough <span class="token operator">=</span> <span class="token string">'Extra Thick Crust Dough'</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>sauce <span class="token operator">=</span> <span class="token string">'Plum Tomato Sauce'</span><span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>toppings<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'Shredded Mozzarella Cheese'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Cutting the pizza into square slices'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token function">ChicagoStyleCheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Chicago Style Deep Dish Cheese Pizza'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>dough <span class="token operator">=</span> <span class="token string">'Extra Thick Crust Dough'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>sauce <span class="token operator">=</span> <span class="token string">'Plum Tomato Sauce'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>toppings<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'Shredded Mozzarella Cheese'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Cutting the pizza into square slices'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <hr>
 <h3 id="client" style="position:relative;"><a href="#client" aria-label="client permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Client</h3>
@@ -795,30 +795,30 @@ data-styled.g72[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"fiiWKJ,"}/*!sc*/
 <hr>
 <h2 id="추상화된-재료-pizza-재료-공장을-만들기" style="position:relative;"><a href="#%EC%B6%94%EC%83%81%ED%99%94%EB%90%9C-%EC%9E%AC%EB%A3%8C-pizza-%EC%9E%AC%EB%A3%8C-%EA%B3%B5%EC%9E%A5%EC%9D%84-%EB%A7%8C%EB%93%A4%EA%B8%B0" aria-label="추상화된 재료 pizza 재료 공장을 만들기 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>추상화된 재료 Pizza 재료 공장을 만들기</h2>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">interface</span> <span class="token class-name">PizzaIngredientFactory</span> <span class="token punctuation">{</span>
-	<span class="token function">createDough</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Dough<span class="token punctuation">;</span>
-	<span class="token function">createCheese</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Cheese<span class="token punctuation">;</span>
-	<span class="token function">createBoolgogi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Boolgogi<span class="token punctuation">;</span>
-	<span class="token function">createVeggies</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Veggies<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token function">createDough</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Dough<span class="token punctuation">;</span>
+  <span class="token function">createCheese</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Cheese<span class="token punctuation">;</span>
+  <span class="token function">createBoolgogi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Boolgogi<span class="token punctuation">;</span>
+  <span class="token function">createVeggies</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Veggies<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
 <hr>
 <h2 id="지역별로-공장-만들기" style="position:relative;"><a href="#%EC%A7%80%EC%97%AD%EB%B3%84%EB%A1%9C-%EA%B3%B5%EC%9E%A5-%EB%A7%8C%EB%93%A4%EA%B8%B0" aria-label="지역별로 공장 만들기 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>지역별로 공장 만들기</h2>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">class</span> <span class="token class-name">IndiaPizzaIngredientFactory</span> <span class="token keyword">implements</span> <span class="token class-name">PizzaIngredientFactory</span> <span class="token punctuation">{</span>
-	<span class="token keyword">public</span> <span class="token function">createDough</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Dough <span class="token punctuation">{</span>
-		<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">VeggieDough</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token function">createDough</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Dough <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">VeggieDough</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 
-	<span class="token keyword">public</span> <span class="token function">createCheese</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Cheese <span class="token punctuation">{</span>
-		<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">VeggieCheese</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token function">createCheese</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Cheese <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">VeggieCheese</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 
-	<span class="token keyword">public</span> <span class="token function">createBoolgogi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Boolgogi <span class="token punctuation">{</span>
-		<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ChickenBoolgogi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token function">createBoolgogi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Boolgogi <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ChickenBoolgogi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 
-	<span class="token keyword">public</span> <span class="token function">createVeggies</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Veggies<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
-		<span class="token keyword">const</span> veggies <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">new</span> <span class="token class-name">Garlic</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Onion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Mushroom</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-		<span class="token keyword">return</span> veggies<span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token function">createVeggies</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Veggies<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> veggies <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">new</span> <span class="token class-name">Garlic</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Onion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Mushroom</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> veggies<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <hr>
 <h2 id="피자-클래스" style="position:relative;"><a href="#%ED%94%BC%EC%9E%90-%ED%81%B4%EB%9E%98%EC%8A%A4" aria-label="피자 클래스 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>피자 클래스</h2>
@@ -876,21 +876,21 @@ data-styled.g72[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"fiiWKJ,"}/*!sc*/
 <hr>
 <h2 id="store" style="position:relative;"><a href="#store" aria-label="store permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Store</h2>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">interface</span> <span class="token class-name">PizzaStore</span> <span class="token punctuation">{</span>
-	<span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza<span class="token punctuation">;</span>
+  <span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">class</span> <span class="token class-name">KorPizzaStore</span> <span class="token keyword">extends</span> <span class="token class-name">PizzaStore</span> <span class="token punctuation">{</span>
-	<span class="token keyword">protected</span> <span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
-		<span class="token keyword">let</span> pizza<span class="token punctuation">;</span>
-		<span class="token keyword">const</span> fac <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">KorIngredientPizzaFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">protected</span> <span class="token function">createPizza</span><span class="token punctuation">(</span>type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> Pizza <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> pizza<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> fac <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">KorIngredientPizzaFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'boolgogi'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			<span class="token comment">// 팩토리 메소드와 다른 점은 피자 자체를 store에서 생성해주었지만, 이제는 원재료를 로컬별 IngredientPizzaFactory에서 받아쓰기때문에, IngredientPizzaFactory 객체를 BoolGogiPizza 생성자에 넘겨주어 피자 재료를 달리생성하게된다.</span>
-			pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BoolGogiPizza</span><span class="token punctuation">(</span>fac<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'boolgogi'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 팩토리 메소드와 다른 점은 피자 자체를 store에서 생성해주었지만, 이제는 원재료를 로컬별 IngredientPizzaFactory에서 받아쓰기때문에, IngredientPizzaFactory 객체를 BoolGogiPizza 생성자에 넘겨주어 피자 재료를 달리생성하게된다.</span>
+      pizza <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BoolGogiPizza</span><span class="token punctuation">(</span>fac<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-		<span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+    <span class="token keyword">return</span> pizza<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <hr>
 <h2 id="관련-패턴-1" style="position:relative;"><a href="#%EA%B4%80%EB%A0%A8-%ED%8C%A8%ED%84%B4-1" aria-label="관련 패턴 1 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>관련 패턴</h2>
@@ -909,7 +909,8 @@ data-styled.g72[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"fiiWKJ,"}/*!sc*/
 <ul>
 <li>디자인 패턴을 이해하는데는 <code class="language-text">인칭(화자)</code>를 명확히 하는 것이 중요합니다.</li>
 <li>
-<p>팩토리의 경우 input 값을 통해 객체를 <code class="language-text">return</code> 해 주는 것이 핵심입니다. 객체를 생성해서 내부의 배열로서 관리하는 것은 팩토리 패턴이 아닙니다.</p>
+<p>팩토리의 경우 input 값을 통해 객체를 <code class="language-text">return</code> 해 주는 것
+이 핵심입니다. 객체를 생성해서 내부의 배열로서 관리하는 것은 팩토리 패턴이 아닙니다.</p>
 <ul>
 <li>게임에서 몬스터를 잡으면 아이템이 나오는데 그 종류는 정해져 있을 것이고 그 확률은 팩토리가 관리할 것입니다. 하지만 팩토리가 만든 아이템은 유저가 가져갈 것입니다. 유저는 어떤 몹을 잡았는지 팩토리에게 알려주고 팩토리가 반환해 주는 아이템을 선택적으로 가져갈 것입니다.</li>
 </ul>
