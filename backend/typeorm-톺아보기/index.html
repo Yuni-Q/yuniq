@@ -215,6 +215,7 @@ data-styled.g72[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"fiiWKJ,"}/*!sc*/
 </li>
 </ul>
 </li>
+<li><a href="/backend/typeorm-%ED%86%BA%EC%95%84%EB%B3%B4%EA%B8%B0/#typeorm%EC%9D%98-bigint">typeorm의 bigint</a></li>
 <li><a href="/backend/typeorm-%ED%86%BA%EC%95%84%EB%B3%B4%EA%B8%B0/#%EC%B0%B8%EA%B3%A0">참고</a></li>
 </ul></div></aside><div class="post-container__StyledDiv-sc-wcqbpn-0 ewzYzb post-content"><ul>
 <li>Node와 RDB의 ORM 서비스는 sequelize, typeorm, prisma 등 많은 라이브러리들이 있습니다.</li>
@@ -1268,6 +1269,15 @@ questions<span class="token operator">:</span> <span class="token builtin">Promi
 <span class="token keyword">const</span> categories <span class="token operator">=</span> <span class="token keyword">await</span> question<span class="token punctuation">.</span>categories<span class="token punctuation">;</span></code></pre></div>
 <ul>
 <li>참고 : 다른 언어 (자바, PHP 등)에서 왔고 모든 곳에서 게으른 관계를 사용하는 데 익숙하다면 조심하세요. 이러한 언어는 비동기식이 아니며 지연로드는 다른 방식으로 이루어집니다. 그렇기 때문에 거기에서 promise를 사용하지 않습니다. 자바 스크립트와 Node.JS에서 지연로드 된 관계를 원하면 promise를 사용해야합니다. 이것은 비표준 기술이며 TypeORM에서 실험적인 것으로 간주됩니다.</li>
+</ul>
+<h2 id="typeorm의-bigint" style="position:relative;"><a href="#typeorm%EC%9D%98-bigint" aria-label="typeorm의 bigint permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>typeorm의 bigint</h2>
+<ul>
+<li>
+<p>typeorm bigint는 number로 바꿔주지 않습니다. string입니다.</p>
+<ul>
+<li><a href="https://typeorm.io/entities#column-types">Note about bigint type: bigint column type, used in SQL databases, doesn’t fit into the regular number type and maps property to a string instead.</a></li>
+</ul>
+</li>
 </ul>
 <hr>
 <h2 id="참고" style="position:relative;"><a href="#%EC%B0%B8%EA%B3%A0" aria-label="참고 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참고</h2>
