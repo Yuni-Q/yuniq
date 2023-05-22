@@ -158,6 +158,7 @@ data-styled.g72[id="post-toc__StyledToc-sc-1fk213p-0"]{content:"fiiWKJ,"}/*!sc*/
 </ul>
 </li>
 <li><a href="/typescript/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%AA%A8%EB%8D%B8%EB%A7%81/#%EA%B0%9D%EC%B2%B4%EB%A5%BC-%EC%9D%B8%EC%9E%90%EB%A1%9C-%EB%84%98%EA%B8%B0%EB%8A%94-%EA%B2%BD%EC%9A%B0%EB%8A%94-%EC%96%B4%EB%96%A4%EA%B0%80">객체를 인자로 넘기는 경우는 어떤가</a></li>
+<li><a href="/typescript/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%AA%A8%EB%8D%B8%EB%A7%81/#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A1%9C-%EB%B0%94%EB%9D%BC%EB%B3%B4%EA%B8%B0">인터페이스로 바라보기</a></li>
 </ul></div></aside><div class="post-container__StyledDiv-sc-wcqbpn-0 ewzYzb post-content"><h2 id="타입스크립트의-타이핑" style="position:relative;"><a href="#%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%ED%83%80%EC%9D%B4%ED%95%91" aria-label="타입스크립트의 타이핑 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>타입스크립트의 타이핑</h2>
 <ul>
 <li>
@@ -516,7 +517,79 @@ interface는 가장 기저에 있는 객체의 모델을 나타냅니다.
 <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">{</span> b<span class="token operator">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span> e<span class="token operator">:</span> <span class="token string">'1'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Argument of type '{ b: string; e: string; }' is not assignable to parameter of type '{ b: string; }'. Object literal may only specify known properties, and 'e' does not exist in type '{ b: string; }'.(2345)</span></code></pre></div>
 <ul>
 <li>일반적으로 객체에 속성이 더 있다면 잉여 속성을 체크하지 않아서 문제가 없다. 하지만 <code class="language-text">함수에 매개변수로 전달</code>할 때 <code class="language-text">잉여 속성 체크</code>가 수행됩니다. 이것은 구조적 타이핑의 한계를 제한하기 위해 도입된 것이므로 구조적 타이핑 입자에서의 집합론에서는 잉여 속성이 있어도 서브 타입으로 보는 것이 맞습니다.</li>
-</ul></div><div class="social-share" style="margin-top:32px"><div class="addthis_inline_share_toolbox_7fpx"></div></div><div class="sponsor-button"><a class="bmc-button" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/yuniq"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"/><span>Buy me a coffee</span></a></div><ins class="kakao_ad_area" style="display:none" data-ad-unit="DAN-tzy6JQMnGdkMHytZ" data-ad-width="320" data-ad-height="50"></ins><hr class="custom-hr"/><div class="bio"><div class="author"><div class="author-description"><div class="author-image gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:72px;height:72px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADCElEQVQ4y42UCU8TURSF/WcYExRxjSFooiFBRYMK4kJcCRrFJUJFVCoqi4YApkgLFsvSdugiioLaphUYoWIaobRllbV0+lnKQCoI9SWTeS/nvjP33HvubCJqhUKhlf3s3DSipQ/T/QGqH7nRm78zNDy8Jjb6zuLaFB2wiAUXFpj8PYalxEXzOTu9Ch/tBbMU1U1yXTBTqjeCJP11Zw3hIiBJS4j7h5uiS03U5fzi1VUz4jMnfWovmo4RSvr7ONiiRe/oicQGI3fWyVAKLgHvDL3cON6N8ooeW1jufI0HY8UA9xqdlIkuMjtaOaIyMTs5tb7kSIYyYXmBg7zMLyjON+BSitA4gum1j+wX7eS1fiXDpCdFY2VmIgZhUJb8sMhOem49BcWVvM2vxFPbi6muh8IKHWcLq8l6VIRSrWX699TGTQnKhRYsHaTl3qbsaSENVeW0q2upeqLk6QMFBk0VxuoSRKMav9+/cYYhmdBhaqIs7zImfTO3cnMQrW/oft9CseIuXpuZfmsj32yfl1oR6fJ6hDIwMT6OtuYlLqGenx16Ztx2QqOuMPAD9+vniF86l322huwvwuj3zHyArgYV3jYNc16R4e9d2Iz19H3tlOOk/zN29FoIH71Dg1gMLVQ+vIsi5wIDLtf/TUo0GJifZyEQiJy7nQ5UFaVY1S/52KhCU1lBq/ZNJOZfZCuEktyQ0RE/57JOcyo9nTOZmRzcn8zJo4dJ3rUTpSIfk6GVT2Yj79uMrK79uk25fPEicXFxbNuyhV07dpAYftIOJKF6nI++vpZ+p52PZiH88dEYPgwGI+9mnY6t8fHEb95MwrYE9uzZS1rKIe5kZ5CRmoK6pop3ggG/zxdj9GTZwx4PSfv2kXsilZunj5GwPZHdiYkcS02lprwUc5MWofktIxsRrpbttNv4oKvFKWi4lp1FqbIYe1dnhMxmFWjThUdvKsborbZDIFyCyYkxxvy+FUzs6cYiGPEMDi7Fyqo29GEoqusrvzZJWpNJTGOvlr28D8lky3WOJv+Xbf4Ap+Oef/pDxokAAAAASUVORK5CYII=" alt="yuni-q" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/966bce2d246e13c4244c17a5349f1e5f/e5b88/profile.png 1x,
+</ul>
+<h2 id="인터페이스로-바라보기" style="position:relative;"><a href="#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A1%9C-%EB%B0%94%EB%9D%BC%EB%B3%B4%EA%B8%B0" aria-label="인터페이스로 바라보기 permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>인터페이스로 바라보기</h2>
+<div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">A</span></span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 가능</span>
+<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">B</span></span> <span class="token keyword">extends</span> <span class="token class-name"><span class="token constant">A</span></span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 가능</span>
+<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">C</span></span> <span class="token keyword">extends</span> <span class="token class-name"><span class="token constant">A</span></span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">D</span></span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 불가능</span>
+<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">E</span></span> <span class="token keyword">extends</span> <span class="token class-name"><span class="token constant">D</span></span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 특이하게 바라보기</span>
+<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">F</span></span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  b<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">type</span> <span class="token class-name"><span class="token constant">G</span></span> <span class="token operator">=</span> Omit<span class="token operator">&lt;</span><span class="token constant">F</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token operator">></span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> f<span class="token operator">:</span> <span class="token constant">F</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token string">'a'</span><span class="token punctuation">,</span>
+  b<span class="token operator">:</span> <span class="token string">'b'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> g<span class="token operator">:</span> <span class="token constant">G</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  b<span class="token operator">:</span> <span class="token string">'b'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+g <span class="token operator">=</span> f<span class="token punctuation">;</span>
+f <span class="token operator">=</span> g<span class="token punctuation">;</span>
+
+<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">H</span></span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">I</span></span> <span class="token punctuation">{</span>
+  b<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 요 개념이 아니라 interface J로 바라봐야 함</span>
+<span class="token keyword">type</span> <span class="token class-name"><span class="token constant">J</span></span> <span class="token operator">=</span> <span class="token constant">H</span> <span class="token operator">&amp;</span> <span class="token constant">I</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> h<span class="token operator">:</span> <span class="token constant">H</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token string">'a'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> i<span class="token operator">:</span> <span class="token constant">I</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  b<span class="token operator">:</span> <span class="token string">'b'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">J</span></span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">H</span></span> <span class="token keyword">extends</span> <span class="token class-name"><span class="token constant">J</span></span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">I</span></span> <span class="token keyword">extends</span> <span class="token class-name"><span class="token constant">J</span></span> <span class="token punctuation">{</span>
+  b<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div></div><div class="social-share" style="margin-top:32px"><div class="addthis_inline_share_toolbox_7fpx"></div></div><div class="sponsor-button"><a class="bmc-button" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/yuniq"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"/><span>Buy me a coffee</span></a></div><ins class="kakao_ad_area" style="display:none" data-ad-unit="DAN-tzy6JQMnGdkMHytZ" data-ad-width="320" data-ad-height="50"></ins><hr class="custom-hr"/><div class="bio"><div class="author"><div class="author-description"><div class="author-image gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:72px;height:72px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADCElEQVQ4y42UCU8TURSF/WcYExRxjSFooiFBRYMK4kJcCRrFJUJFVCoqi4YApkgLFsvSdugiioLaphUYoWIaobRllbV0+lnKQCoI9SWTeS/nvjP33HvubCJqhUKhlf3s3DSipQ/T/QGqH7nRm78zNDy8Jjb6zuLaFB2wiAUXFpj8PYalxEXzOTu9Ch/tBbMU1U1yXTBTqjeCJP11Zw3hIiBJS4j7h5uiS03U5fzi1VUz4jMnfWovmo4RSvr7ONiiRe/oicQGI3fWyVAKLgHvDL3cON6N8ooeW1jufI0HY8UA9xqdlIkuMjtaOaIyMTs5tb7kSIYyYXmBg7zMLyjON+BSitA4gum1j+wX7eS1fiXDpCdFY2VmIgZhUJb8sMhOem49BcWVvM2vxFPbi6muh8IKHWcLq8l6VIRSrWX699TGTQnKhRYsHaTl3qbsaSENVeW0q2upeqLk6QMFBk0VxuoSRKMav9+/cYYhmdBhaqIs7zImfTO3cnMQrW/oft9CseIuXpuZfmsj32yfl1oR6fJ6hDIwMT6OtuYlLqGenx16Ztx2QqOuMPAD9+vniF86l322huwvwuj3zHyArgYV3jYNc16R4e9d2Iz19H3tlOOk/zN29FoIH71Dg1gMLVQ+vIsi5wIDLtf/TUo0GJifZyEQiJy7nQ5UFaVY1S/52KhCU1lBq/ZNJOZfZCuEktyQ0RE/57JOcyo9nTOZmRzcn8zJo4dJ3rUTpSIfk6GVT2Yj79uMrK79uk25fPEicXFxbNuyhV07dpAYftIOJKF6nI++vpZ+p52PZiH88dEYPgwGI+9mnY6t8fHEb95MwrYE9uzZS1rKIe5kZ5CRmoK6pop3ggG/zxdj9GTZwx4PSfv2kXsilZunj5GwPZHdiYkcS02lprwUc5MWofktIxsRrpbttNv4oKvFKWi4lp1FqbIYe1dnhMxmFWjThUdvKsborbZDIFyCyYkxxvy+FUzs6cYiGPEMDi7Fyqo29GEoqusrvzZJWpNJTGOvlr28D8lky3WOJv+Xbf4Ap+Oef/pDxokAAAAASUVORK5CYII=" alt="yuni-q" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/966bce2d246e13c4244c17a5349f1e5f/e5b88/profile.png 1x,
 /static/966bce2d246e13c4244c17a5349f1e5f/e7bd6/profile.png 1.5x,
 /static/966bce2d246e13c4244c17a5349f1e5f/a12fc/profile.png 2x" /><img loading="lazy" width="72" height="72" srcset="/static/966bce2d246e13c4244c17a5349f1e5f/e5b88/profile.png 1x,
 /static/966bce2d246e13c4244c17a5349f1e5f/e7bd6/profile.png 1.5x,
